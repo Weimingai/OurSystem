@@ -1,0 +1,16 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+.thead ul li{
+	float:left;
+}
+.tbody{
+	padding-right:250px;
+}

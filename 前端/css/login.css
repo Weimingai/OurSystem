@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+}
+a{
+	text-decoration: none;
+}
+.logo{
+	width: 500px;
+	height: 200px;
+	margin-left: 250px;
+	margin-right: 0px;
+	margin-top: 80px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: "华文中宋";
+	font-size: 45px;
+	
+}
+.login{
+	width:400px;
+	height:300px;
+	margin-left:800px;
+	margin-right:0px;
+	margin-top:20px;
+	margin-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	background-color:#e1e1e1;
+}
+.id{
+	width: 250px;
+	border: 2px solid #e2e2e2;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: 5px center;
+	padding: 0 0 0 15px;
+	border-radius: 15px;
+	vertical-align: middle;
+}
+.ps{
+    width: 250px;
+    border: 2px solid #e2e2e2;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position:5px center;
+    padding:0 0 0 15px;
+	border-radius: 15px;
+}
+.tl{
+	color: #471534;
+	font-family: 黑体;
+	font-size: 24px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: bottom;
+}
+.tixing{
+	text-align:right;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:10px;
+	margin-bottom:0px;
+	padding-left:0px;
+	padding-right:50px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.lb{
+	background-color: #09F;
+	width:100px;
+	border: none;
+	height: 35px;
+	border-radius: 6px;
+	margin-left: 150px;
+	margin-right: 0px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	padding-left: 0x;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	ont-family: 微软雅黑;
+	font-size: 18px;
+	text-align:center;
+}
