@@ -1,0 +1,272 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+/*查询*/
+/*子页面标题*/	
+.tou{
+
+	font-family:黑体;
+	font-size:30px;
+}
+
+
+/*阶段查询*/
+#tjdq1{
+	margin-top:30px;
+	margin-left:200px;
+}
+.jdqt{
+	width:120px;
+	height:60px;
+	padding-right:0px;
+	text-align:center;
+	border-radius:10px;
+	border:none;
+	
+}
+#tuanq{
+	background-color: #F30;
+}
+#ruq{
+	background-color: #0C0;
+}
+#faq{
+	background-color: #09F;
+}
+#yuq{
+	background-color: #FFFF00;
+}
+#zhengq{
+	background-color: #FF9933;
+}	
+.kong1{
+ width:30px;
+}
+
+/*echart*/	
+.tjdbm{
+	text-align:center;
+}
+#tjdi
+{
+    border-collapse: collapse;
+	margin-top:0px;
+    margin-left:120px;
+    text-align: center;
+}
+#tjdi td, table th
+{
+	text-align:center;
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}
+#tjdi thead th
+{
+    background-color: #CCE8EB;
+    width: 150px;
+}
+#tjdi tr:nth-child(odd)
+{
+    background: #fff;
+}
+#tjdi tr:nth-child(even)
+{
+    background: #F5FAFA;
+}
+
+
+/*班级查询*/
+#tbjq{
+	margin-top:30px;
+	margin-left:100px;
+}
+.bjqt{
+	width:100px;
+	height:40px;
+	padding-right:0px;
+	text-align:center;
+	border-radius:8px;
+	border:none;
+}	
+.kong2{
+ width:20px;
+}	
+.kong3{
+	height:30px;
+}
+#bj1{
+	
+	background-color: #F00;
+	}
+#bj2{
+	
+	background-color: #FFFF00;
+	}	
+#bj3{
+	
+	background-color:#FF9933;
+	}
+#bj4{
+	
+	background-color:#0C0;
+	}				
+#bj5{
+	
+	background-color: #F00;
+	}
+#bj6{
+	
+	background-color: #FFFF00;
+	}	
+#bj7{
+	
+	background-color:#FF9933;
+	}
+#bj8{
+	
+	background-color:#0C0;
+	}	
+#bj9{
+	
+	background-color: #F00;
+	}
+#bj10{
+	
+	background-color: #FFFF00;
+	}	
+#bj11{
+	
+	background-color:#FF9933;
+	}
+#bj12{
+	
+	background-color:#0C0;
+	}	
+#bj13{
+	
+	background-color: #F00;
+	}
+#bj14{
+	
+	background-color: #FFFF00;
+	}	
+#bj15{
+	
+	background-color:#FF9933;
+	}
+#bj16{
+	
+	background-color:#0C0;
+	}		
+#bj17{
+	
+	background-color: #F00;
+	}
+#bj18{
+	
+	background-color: #FFFF00;
+	}	
+#bj19{
+	
+	
+	}
+#bj20{
+	
+	
+	}		
+/*echart*/	
+.tbjbm{
+	text-align:center;
+}
+#tbji
+{
+    border-collapse: collapse;
+	margin-top:0px;
+    margin-left:120px;
+    text-align: center;
+}
+#tbji td, table th
+{
+	text-align:center;
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}
+#tbji thead th
+{
+    background-color: #CCE8EB;
+    width: 130px;
+}
+#tbji tr:nth-child(odd)
+{
+    background: #fff;
+}
+#tbji tr:nth-child(even)
+{
+    background: #F5FAFA;
+}
+
+	
+/*个人查询*/
+.grsearch{
+	margin-left:105px;
+	width:1000px;
+	height:20px;
+}
+.ls{
+	width:100px;
+	height:30px;
+	margin-right:8px;
+	margin-left:15px;
+}
+.grsli{
+	float:left;
+}
+.lsearch{
+	
+}
+/*echart*/	
+.tgrbm{
+	text-align:center;
+}
+#tgri
+{
+    border-collapse: collapse;
+	margin-top:20px;
+    margin-left:120px;
+    text-align: center;
+}
+#tgri td, table th
+{
+	text-align:center;
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}
+#tgri thead th
+{
+    background-color: #CCE8EB;
+    width: 150px;
+}
+#tgri tr:nth-child(odd)
+{
+    background: #fff;
+}
+#tgri tr:nth-child(even)
+{
+    background: #F5FAFA;
+}
+.ps{
+	cursor:pointer;
+}
+	
+	
+	

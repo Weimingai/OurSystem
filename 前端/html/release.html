@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta charset=utf-8>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/release.css" media="screen"  /> 
+	<script src="../js/laydate.js"></script> <!-- 改成你的路径 -->
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="release">
+	<span class="tou">发布申请</span>
+	<div id="info">辅导员：<span id="fudaoyuan">滕良文</span>  &nbsp; &nbsp; &nbsp; 年级：<span id="nianji">2017级</span> </div>
+	<table id="tjdr">
+	<tr>
+	<td class="jdrt">团推优</td>
+	<td class="kong1"></td>
+	<td class="jdrt">入党积极分子</td>
+	<td class="kong1"></td>
+	<td class="jdrt">发展对象</td>
+	<td class="kong1"></td>
+	<td class="jdrt">预备党员</td>
+	<td class="kong1"></td>
+	<td class="jdrt">党员转正</td>
+	</tr>
+	</table>
+	<div id="rform">
+	<form name="release">
+	<div class="start">
+	开始日期：<input type="text" id="startdate"> &nbsp; &nbsp; 时间：<input type="text" id="starttime"> 
+	
+	</div>
+	<div class="class">
+	<table>
+		<tr>
+		<td>选择班级：</td> 
+		<td>
+		<input type="checkbox" name="calsscheck" value="all" checked=”checked” />全部班级<br /> 
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701	
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		</td> </tr>
+		</table>
+	</div>
+	<div class="end">
+	结束日期：<input type="text" id="enddate">  &nbsp; &nbsp; 时间：<input type="text" id="endtime"> 
+	
+	</div>
+	
+	<script type="text/javascript">
+	laydate.render({
+	elem: '#startdate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#starttime'
+	,type: 'time'
+	});
+	laydate.render({
+	elem: '#enddate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#endtime'
+	,type: 'time'
+	});
+	</script>
+	
+	<input class="tjan" type="submit" value="提交" />
+	</form>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/exam.css" media="screen"  /> 
+	<script src="../js/echarts.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+							<span class="tou">审批申请</span>
+
+							<table id="texam">
+						    <tr>
+						      <td class="examt" id="tuane">团推优</td>
+							  <td class="kong1"></td>
+						      <td class="examt" id="rue">入党积极分子</td>
+							  <td class="kong1"></td>
+						      <td class="examt" id="fae">发展对象</td>
+							  <td class="kong1"></td>
+							
+						      <td class="examt" id="yue">预备党员</td>
+							  <td class="kong1"></td>
+						      <td class="examt" id="zhenge">正式党员子</td>
+							</tr>
+							</table>
+							
+							<h3 class="texambm">管理学院党员发展信息</h3>
+							
+							<div class="grsearch">
+						<form name="fsearch">
+						<ul>
+						<li class="grsli"><div class="lsearch"><button class="anniu">全选</button></div></li>
+						<li class="grsli"><div class="lsearch"><button class="anniu">同意</button></div></li>
+						<li class="grsli"><div class="lsearch"><button class="anniu">驳回</button></div></li>
+						<li class="grsli"><div class="lsearch"><input class="ls" name="id" type="text" placeholder="姓名："><img class="ps" src="../images/search.png" height=30px; weight=30px; /></div></li>
+						<li class="grsli"><div class="lsearch"><input class="ls" name="name" type="text" placeholder="学号："><img class="ps" src="../images/search.png" height=30px; weight=30px; /></div></li>
+						
+						<li class="grsli"><div class="lsearch">
+							<select class="ls">
+							<option class="sclass">班级：</option>
+							<option class="sclass">工商1701</option>
+							<option class="sclass">工商1702</option>
+							<option class="sclass">工商1703</option>
+							<option class="sclass">工商1704</option>
+							</select>
+							<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+						</li>
+						<li class="grsli"><div class="lsearch">
+							<select class="ls">
+							<option >申请类型：</option>
+							<option value ="statu1">团推优</option>
+							<option value ="statu2">入党积极分子</option>
+							<option value="statu3">发展对象</option>
+							<option value="statu4">预备党员</option>
+							<option value="statu5">正式党员</option>
+							</select>
+							<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+						</li>
+						<li class="grsli"><div class="lsearch">
+							<select class="ls">
+							<option >时间排序：</option>
+							<option value ="ascending">升序</option>
+							<option value ="  descending">降序</option>
+							
+							</select>
+							<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+						</li>
+						<li class="grsli"><div class="lsearch">
+							<select class="ls">
+							<option >审批状态：</option>
+							<option value ="ascending">已审批</option>
+							<option value ="  descending">未审批</option>
+							
+							</select>
+							<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+						</li>
+						</ul>
+						</form>
+						</div>
+							
+							<div width="1000px;">
+							<br />
+							<table id="texami" >
+							
+							<thead>
+							<tr>
+							<th class="pi">选择</th><th class="pi">同意</th><th class="pi">驳回</th><th class="xinxi">姓名</th><th class="xinxi">学号</th>
+							<th class="xinxi">班级</th><th class="xinxi">申请类型</th><th class="xinxi">提交时间</th><th class="xinxi">审批状态</th>
+							</tr>
+							</thead>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>李乐</td><td>0121703490112</td><td>信管1701</td><td>团推优</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>刘文礼</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>刘智慧</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>黄怿哲</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>黄随扬</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							<tr>
+							<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>张学铭</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 12:30:45</td><td>未审批</td>	
+							</tr>
+							</table>
+							
+							</div>
+							
+</body>
+</html>

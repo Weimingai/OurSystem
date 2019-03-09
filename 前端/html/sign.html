@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/sign.css" media="screen"  /> 
+	<script src="../js/echarts.js"></script>
+	<script src="../js/laydate.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<span class="tou">签到管理</span>
+	
+	<div id="info">辅导员：<span id="fudaoyuan">滕良文</span>  &nbsp; &nbsp; &nbsp; 年级：<span id="nianji">2017级</span> </div>
+
+	<table id="tqdlx">
+    <tr>
+		<td class="qdlxt" id="dkqd">党课学习</td>
+		<td class="kong1"></td>
+		<td class="qdlxt" id="ldqd">义务劳动</td>
+	</tr>
+	</table>
+
+	<div id="fanwei">
+		<form id="fwf">
+		<table id="tfw">
+		<tr>
+		<td class="fwt">阶段选择：
+			<select class="xzlx">
+			<option value ="statu1">团推优</option>
+			<option value ="statu2">入党积极分子</option>
+			<option value="statu3">发展对象</option>
+			<option value="statu4">预备党员</option>
+			<option value="statu5">正式党员</option>
+			</select>
+		</td>
+		<td class="fwt">批次选择：
+			<select class="xzlx">
+			<option value ="pc1">第一批</option>
+			<option value ="pc2">第二批</option>
+			<option value="pc3">第三批</option>
+			<option value="pc4">第四批</option>
+			<option value="pc5">第五批</option>
+			</select>
+		</td>
+		</tr>
+		</table>
+		
+		<div class="class">
+		<table>
+		<tr>
+		<td>选择班级：</td> 
+		<td>
+		<input type="checkbox" name="calsscheck" value="all" checked=”checked” />全部班级<br /> 
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701	
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<input type="checkbox" name="calsscheck" value="工商1701" />工商1701
+		<br />
+		</td> </tr>
+		</table>
+		</div>
+		
+		<div class="start">
+		开始日期：<input type="text" id="startdate"> &nbsp; &nbsp; 时间：<input type="text" id="starttime"> 
+		</div>
+		<div class="end">
+		结束日期：<input type="text" id="enddate">  &nbsp; &nbsp; 时间：<input type="text" id="endtime"> 
+		</div>
+		
+		<div class="ddxz">
+		地点选择：<br/>
+		<input type="text" placeholder="地图插件"/>&nbsp;  &nbsp; &nbsp;
+		<br />
+		<br />
+		<input type="submit" value="发布"/>
+		</div>
+		</form>
+	</div>
+	
+	<div id="xinxi">
+	<div id="xinxi1">
+	<span class="bt1">已请假同学：</span><br />
+	<button class="qj">郭启哲</button><button class="qj">郭启哲</button>
+	<br />
+	<span class="bt1">未签到同学：</span><br />
+	<button class="wq">郭启哲</button><button class="wq">郭启哲</button><button class="wq">郭启哲</button><button class="wq">郭启哲</button>
+	<button class="wq">郭启哲</button><button class="wq">郭启哲</button><button class="wq">郭启哲</button><button class="wq">郭启哲</button>
+	<br />
+	<button class="wq">郭启哲</button><button class="wq">郭启哲</button>
+	<br />
+	<span class="bt1">已签到同学：</span><br />
+	<button class="yq">蔡正浩</button><button class="yq">蔡正浩</button><button class="yq">蔡正浩</button><button class="yq">蔡正浩</button>
+	<button class="yq">蔡正浩</button><button class="yq">蔡正浩</button><button class="yq">蔡正浩</button><button class="yq">蔡正浩</button>
+	</div>
+	<span class="bt1">手动签到：</span>
+		<div id="searcht">
+		<form name="fsearch">
+		<ul>
+		<li class="grsli"><div class="lsearch"><button class="anniu">全选</button></div></li>
+		<li class="grsli"><div class="lsearch"><button class="anniu">已到</button></div></li>
+		<li class="grsli"><div class="lsearch"><button class="anniu">请假</button></div></li>
+		<li class="grsli"><div class="lsearch"><input class="ls" name="id" type="text" placeholder="姓名："><img class="ps" src="../images/search.png" height=30px; weight=30px; /></div></li>
+		<li class="grsli"><div class="lsearch"><input class="ls" name="name" type="text" placeholder="学号："><img class="ps" src="../images/search.png" height=30px; weight=30px; /></div></li>
+		
+		<li class="grsli"><div class="lsearch">
+			<select class="ls">
+			<option class="sclass">班级：</option>
+			<option class="sclass">工商1701</option>
+			<option class="sclass">工商1702</option>
+			<option class="sclass">工商1703</option>
+			<option class="sclass">工商1704</option>
+			</select>
+			<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+		</li>
+		<li class="grsli"><div class="lsearch">
+			<select class="ls">
+			<option >阶段类型：</option>
+			<option value ="statu1">团推优</option>
+			<option value ="statu2">入党积极分子</option>
+			<option value="statu3">发展对象</option>
+			<option value="statu4">预备党员</option>
+			<option value="statu5">正式党员</option>
+			</select>
+			<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+		</li>
+		<li class="grsli"><div class="lsearch">
+			<select class="ls">
+			<option >签到项目</option>
+			<option value ="dk1">党课学习1</option>
+			<option value ="  ld1">义务劳动1</option>
+			
+			</select>
+			<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+		</li>
+		<li class="grsli"><div class="lsearch">
+			<select class="ls">
+			<option >签到状态：</option>
+			<option value ="dao">已签到</option>
+			<option value ="jia">已请假</option>
+			<option value ="wei">未签到</option>
+			
+			</select>
+			<img class="ps" src="../images/search.png" height=30px; weight=30px; /></div>
+		</li>
+		</ul>
+		</form>
+		</div>
+							
+		<div width="1000px;">
+		<br />
+		<table id="texami" >
+		
+		<thead>
+		<tr>
+		<th class="pi">选择</th><th class="pi">同意</th><th class="pi">驳回</th><th class="xinxi">姓名</th><th class="xinxi">学号</th>
+		<th class="xinxi">班级</th><th class="xinxi">申请类型</th><th class="xinxi">提交时间</th><th class="xinxi">签到状态</th>
+		</tr>
+		</thead>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>李乐</td><td>0121703490112</td><td>信管1701</td><td>团推优</td><td>2018-12-09 党课1</td><td>未签到</td>	
+		</tr>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>刘文礼</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 劳动1</td><td>未签到</td>	
+		</tr>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>刘智慧</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 党课1</td><td>已请假</td>	
+		</tr>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>黄怿哲</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 劳动1</td><td>已签到</td>	
+		</tr>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>黄随扬</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 劳动1</td><td>已签到</td>	
+		</tr>
+		<tr>
+		<td class="pi">方块</td><td class="pi">圆圈</td><td class="pi">圆圈</td><td>张学铭</td><td>0121703490112</td><td>信管1701</td><td>入党积极分子</td><td>2018-12-09 劳动1</td><td>已签到</td>	
+		</tr>
+		</table>
+		
+		</div>
+	</div>
+	
+	
+
+	<script type="text/javascript">
+	laydate.render({
+	elem: '#startdate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#starttime'
+	,type: 'time'
+	});
+	laydate.render({
+	elem: '#enddate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#endtime'
+	,type: 'time'
+	});
+	</script>
+	
+</body>
+</html>
