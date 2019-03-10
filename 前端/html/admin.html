@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		.sidebar{
+		display:inline-block;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+		}
+		.menu-first{
+			display:block;
+			color:#3A5FCD;
+			text-decoration:none;
+			font-size:18px;
+		}
+		.menu-first:hover{
+		
+			}
+		.menu-second li a{
+			display:block;
+			color:#3A5FCD;
+			text-decoration:none;
+			font-size:14px;
+		}
+		.menu-second li a:hover{
+			color:black;
+			}
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 导航条-->
+        <nav class="navbar navbar-default" style="font-size:20px;">
+            <div class="navbar-collapse">
+				<div class="navbar-header">
+					<image  src="1.jpg"></image>
+					<a class="navbar-brand" href="#" style="font-family:楷体;font-size:30px;">高校党员发展管理系统</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+					<li><a href="#">欢迎使用</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-user">蔡正浩</span>
+						<b class="caret"></b>
+						</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">个人中心</a></li>
+						<li class="divider"></li>
+						<li><a href="#">退出登录</a></li>
+				    </ul>			
+				</ul>
+            </div>
+        </nav>
+	 <!-- 左侧菜单选项-->
+        <div class="container-fluid">
+            <div class="row-fluie">
+                <div class="col-md-2 sidebar">        
+                    <ul class="nav nav-sidebar">
+                        <!-- 一级菜单 -->
+                        <li class="active">
+							<a href="#query" class="nav-header menu-first collapsed" onclick="showAtRight('fudaoyuandaoru.html')" data-toggle="collapse"><span class="glyphicon glyphicon-search"></span>辅导员信息</a>
+                        </li> 
+                        <!-- 一级菜单 -->
+                        <li>
+							<a href="#apply" class="nav-header menu-first collapsed" onclick="showAtRight('studentdaoru.html')" data-toggle="collapse"><span class="glyphicon glyphicon-file"></span>学生信息</a>
+                        </li> 
+						    
+                    </ul>
+				</div>
+				<!-- 右侧内容展示 -->           
+                <div class="col-md-10" style="margin-top:-20px;">
+                    <h1 class="page-header"> 欢迎使用<small>   高校党员发展系统</small></h1>
+                        
+                        <!-- 载入左侧菜单指向的页面 -->
+                          <div id="content1">
+               
+                               <h4>                    
+                                   <strong>使用指南：</strong><br>
+                                   <br><br>默认页面内容……
+                               </h4>
+                              
+                          </div>  
+                </div>
+            </div>
+        </div>
+		<script>
+			$(document).ready(function(){
+				$("#bt").click(function(){
+					$("#content1").load("query.html");
+				});
+			});
+			function showAtRight(url){
+				$("#content1").load(url);
+			}
+		</script>		
+</body>
+</html>

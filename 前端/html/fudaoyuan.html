@@ -103,6 +103,26 @@
                 </div>
             </div>
         </div>
+		<script type="text/javascript">
+	laydate.render({
+	elem: '#startdate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#starttime'
+	,type: 'time'
+	});
+	laydate.render({
+	elem: '#enddate'
+	,btns: ['confirm']
+	});
+	
+	laydate.render({
+	elem: '#endtime'
+	,type: 'time'
+	});
+	</script>
 		<script>
 			$(document).ready(function(){
 				$("#bt").click(function(){

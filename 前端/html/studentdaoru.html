@@ -1,0 +1,157 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="verify-master/css/verify.css">
+	<style>
+		.button{
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 7px 16px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		table
+        {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table td, table th
+        {
+            border: 1px solid #cad9ea;
+            color: #666;
+            height: 30px;
+        }
+        table thead th
+        {
+            background-color: #CCE8EB;
+            width: 150px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #fff;
+        }
+        table tr:nth-child(even)
+        {
+            background: #F5FAFA;
+        }
+	</style>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluie">
+			<div>
+				<button class="button">查看</button>
+				<button class="button" data-toggle="modal" data-target="#add">添加</button>
+				<button class="button" data-toggle="modal" data-target="#load">批量导入</button>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluie">
+		<div>
+		<table class="table" style="clear:left;">
+			<caption><h2 align=center>管理学院辅导员信息</h2></caption>
+			<thead>
+				<tr>
+					<th>学号</th><th>姓名</th><th>性别</th><th>班级</th><th>密码</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>0121703490216</td><td>蔡正浩</td><td>男</td><td>信管1702</td><td>czh123</td>
+			</tr>
+			<tr>
+				<td>0121703490116</td><td>王鑫伟</td><td>女</td><td>信管1701</td><td>wxw123</td>
+			</tr>
+			<tr>
+				<td>0121703490316</td><td>郭启哲</td><td>女</td><td>信管1703</td><td>gqz123</td>
+			</tr>
+		</table>
+		</div>
+		</div>
+	</div>
+	<!--添加-->
+     <div id="add" class="modal fade">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button class="close" data-dismiss="modal">
+                         <span>&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-title">
+                     <h1 class="text-center">添加学生信息</h1>
+                 </div>
+                 <div class="modal-body">
+                     <form class="form-group" action="load" method="post">
+                             <div class="form-group">
+                                 <label for="">学号</label>
+                                 <input class="form-control" type="text" placeholder="" name="user">
+							</div>
+                             <div class="form-group">
+                                 <label for="">姓名</label>
+                                 <input class="form-control" type="password" placeholder="" name="password">
+                             </div>
+                             <div class="form-group">
+                                 <label for="">性别</label>
+                                 <input class="form-control" type="text" placeholder="" name="user">
+							</div>
+							<div class="form-group">
+                                 <label for="">班级</label>
+                                 <input class="form-control" type="text" placeholder="" name="user">
+							</div>
+							<div class="form-group">
+                                 <label for="">密码</label>
+                                 <input class="form-control" type="text" placeholder="" name="user">
+							</div>
+                             <div class="text-right">
+                             	<br>
+                                 <button class="btn btn-primary" type="submit" id="login1">添加</button>
+                                 <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                             </div>
+                    </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+	 <!--导入-->
+     <div id="load" class="modal fade">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button class="close" data-dismiss="modal">
+                         <span>&times;</span>
+                     </button>
+                 </div>
+                 <div class="modal-title">
+                     <h1 class="text-center">导入学生信息</h1>
+                 </div>
+                 <div class="modal-body">
+                     <form class="form-group" action="load" method="post">
+							<a href="../else/example.xlsx">请先查看示例文件</a>
+                             <div class="form-group">
+                                 <label for="">上传文件：</label>
+                                 <input class="form-control" type="file" placeholder="" name="file">
+							</div>
+                            
+                             <div class="text-right">
+                             	<br>
+                                 <button class="btn btn-primary" type="submit" id="login1">上传</button>
+                                 <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                             </div>
+                    </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+</body>
+</html>

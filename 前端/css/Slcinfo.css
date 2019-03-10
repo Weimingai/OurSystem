@@ -1,0 +1,25 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+/*查询*/
+/*子页面标题*/	
+.tou{
+
+	font-family:黑体;
+	font-size:30px;
+}
+
+/*学生信息*/
+#info{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:420px;
+	
+}

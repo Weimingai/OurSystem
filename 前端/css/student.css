@@ -1,0 +1,48 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+.thead ul li{
+	float:left;
+}
+.tbody{
+	padding-right:250px;
+}
+
+.sidebar{
+	display:inline-block;
+    z-index: 1000;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+.menu-first{
+	display:block;
+	color:#3A5FCD;
+	text-decoration:none;
+	font-size:18px;
+}
+.menu-first:hover{
+		
+}
+.menu-second li a{
+	display:block;
+	color:#3A5FCD;
+	text-decoration:none;
+	font-size:14px;
+}
+.menu-second li a:hover{
+	color:black;
+	}
+/*脚部*/
+#foot{
+	height:200px;
+}

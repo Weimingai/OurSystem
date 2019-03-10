@@ -1,0 +1,62 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+/*查询*/
+/*子页面标题*/	
+.tou{
+
+	font-family:黑体;
+	font-size:30px;
+}
+
+/*学生信息*/
+#info{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:420px;
+	
+}
+
+/*种类*/
+#tqdlx{
+	margin-top:30px;
+	margin-left:400px;
+}
+.qdlxt{
+	width:120px;
+	height:60px;
+	padding-right:0px;
+	text-align:center;
+	border-radius:10px;
+	border:none;
+	
+}
+#dkqd{
+	background-color: #F30;
+}
+#ldqd{
+	background-color: #0C0;
+}
+
+.kong1{
+ width:30px;
+}
+/*选择范围*/
+#tfw{
+	margin-top:30px;
+	margin-left:300px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+}
+.fwt{
+	padding-right:50px;
+	width:150px;
+	height:40px;
+}

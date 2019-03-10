@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/student.css" media="screen"  /> 
+	<script src="../js/echarts.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/laydate.js"></script>
+</head>
+<body>
+	<!-- 导航条-->
+        <nav class="navbar navbar-default" style="font-size:20px;">
+            <div class="navbar-collapse">
+				<div class="navbar-header">
+					<image  src="../images/1.jpg"></image>
+					<a class="navbar-brand" href="#" style="font-family:楷体;font-size:30px;">高校党员发展管理系统</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right" style="margin-right:20px;">
+					<li><a href="#">欢迎使用</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-user">蔡正浩</span>
+						<b class="caret"></b>
+						</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">个人中心</a></li>
+						<li class="divider"></li>
+						<li><a href="#">退出登录</a></li>
+				    </ul>			
+				</ul>
+            </div>
+        </nav>
+	 <!-- 左侧菜单选项-->
+        <div class="container-fluid">
+            <div class="row-fluie">
+                <div class="col-md-2 sidebar">        
+                    <ul class="nav nav-sidebar">
+                        <!-- 一级菜单 -->
+                        <li class="active">
+							<a href="#query" class="nav-header menu-first collapsed" data-toggle="collapse"><span class="glyphicon glyphicon-search"></span>信息查询</a>
+                        </li> 
+						<!-- 二级菜单 -->
+                        <ul id="query" class="nav nav-list collapse menu-second">
+							<li><a href="#" onclick="showAtRight('Sgrinfo.html')"><span class="glyphicon glyphicon-film"></span> 个人信息</a></li>
+							<li><a href="#" onclick="showAtRight('Slcinfo.html')"><span class="glyphicon glyphicon-film"></span> 流程信息</a></li>
+							<li><a href="#" onclick="showAtRight('Srequest.html')"><span class="glyphicon glyphicon-film"></span> 发展要求</a></li>
+                        </ul>
+                        <!-- 一级菜单 -->
+                        <li>
+							<a href="#apply" class="nav-header menu-first collapsed" data-toggle="collapse"><span class="glyphicon glyphicon-file"></span>发展申请</a>
+                        </li> 
+						<!-- 二级菜单 -->
+                        <ul id="apply" class="nav nav-list collapse menu-second">
+							<li><a href="#" onclick="showAtRight('Srelease.html')"><span class="glyphicon glyphicon-film"></span> 团推优申请</a></li>
+							<li><a href="#" onclick="showAtRight('Srelease.html')"><span class="glyphicon glyphicon-film"></span> 入党积极分子申请</a></li>
+							<li><a href="#" onclick="showAtRight('Srelease.html')"><span class="glyphicon glyphicon-film"></span> 发展对象申请</a></li>
+							<li><a href="#" onclick="showAtRight('Srelease.html')"><span class="glyphicon glyphicon-film"></span> 预备党员申请</a></li>
+							<li><a href="#" onclick="showAtRight('Srelease.html')"><span class="glyphicon glyphicon-film"></span> 党员转正申请</a></li>
+                        </ul>
+                        <!-- 一级菜单 -->
+                        <li>
+							<a href="#sign" class="nav-header menu-first collapsed" data-toggle="collapse"><span class="glyphicon glyphicon-file"></span>考核签到</a>
+                        </li> 
+						<!-- 二级菜单 -->
+                        <ul id="sign" class="nav nav-list collapse menu-second">
+							<li><a href="###" onclick="showAtRight('Ssign.html')"><span class="glyphicon glyphicon-film"></span> 党课学习</a></li>
+							<li><a href="###" onclick="showAtRight('Ssign.html')"><span class="glyphicon glyphicon-film"></span> 义务劳动</a></li>
+                        </ul> 
+						<li>
+							<a href="#lianjie" class="nav-header menu-first collapsed" data-toggle="collapse"><span class="glyphicon glyphicon-file"></span>其他网站</a>
+                        </li> 
+						<!-- 二级菜单 -->
+                        <ul id="lianjie" class="nav nav-list collapse menu-second">
+							<li><a href="http://lgdy.whut.edu.cn/" ><span class="glyphicon glyphicon-film"></span> 理工党员网</a></li>
+							<li><a href="http://www.12371.cn/" ><span class="glyphicon glyphicon-film"></span> 共产党员网</a></li>
+                        </ul> 
+                    </ul>
+				</div>
+				<!-- 右侧内容展示 -->           
+                <div class="col-md-10" style="margin-top:-20px;">
+                    <h1 class="page-header"> 欢迎使用<small>   高校党员发展系统</small></h1>
+                        
+                        <!-- 载入左侧菜单指向的页面 -->
+                        <div id="content1">
+               
+                               <h4>                    
+                                   <strong>使用指南：</strong><br>
+                                   <br><br>默认页面内容……
+                               </h4>
+                              
+                         </div>  
+						
+                </div>
+            </div>
+        </div>
+		<script type="text/javascript">
+		laydate.render({
+		elem: '#startdate'
+		,btns: ['confirm']
+		});
+		
+		laydate.render({
+		elem: '#starttime'
+		,type: 'time'
+		});
+		laydate.render({
+		elem: '#enddate'
+		,btns: ['confirm']
+		});
+		
+		laydate.render({
+		elem: '#endtime'
+		,type: 'time'
+		});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#bt").click(function(){
+					$("#content1").load("jdquery.html");
+				});
+			});
+			function showAtRight(url){
+				$("#content1").load(url);
+			}
+		</script>	
+		
+		<div id="foot">
+		<span height=80px;> &nbsp; </span>
+		</div>
+</body>
+</html>

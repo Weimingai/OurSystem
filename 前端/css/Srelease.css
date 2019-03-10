@@ -1,0 +1,64 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration:none;	
+}
+ul{
+	list-style-type:none;
+}
+.tou{
+	font-family:微软雅黑;
+	font-size:30px;
+	
+}
+
+#info{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:400px;
+	
+}
+
+#tjdr{
+	width:1000px;
+	margin-bottom:20px;
+}
+.kong1{
+	width:30px;
+}
+.jdrt {
+	width: 150px;
+	height: 60px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	text-align: center;
+	background-color: #09F;
+	border-radius: 8px;
+	cursor:pointer;
+}
+
+#rform{
+	margin-left:270px;
+	font-family: 微软雅黑;
+	font-size: 16px;
+}
+.start{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:0px;
+}
+.class{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:0px;
+}
+.end{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:0px;
+}
+.tjan{
+	margin-left:250px;
+}
