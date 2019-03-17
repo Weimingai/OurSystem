@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/login.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+	
+	<div id="zhuti">
+		<div class="logo">
+			高校党员发展管理系统
+		</div>
+		<div class="login">
+			<div id="tbl">
+				<form action="#" method=post name=loginform id="loginform">
+					<table id="lt">
+						<tr>
+							<td class="tl zm">账号</td>
+							<td class="tl">
+							<input class="id" name="ID" type="text" placeholder="ID"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tl zm">密码</td>
+							<td class="tl">
+							<input class="ps" name="PWD" type="password" placeholder="PassWord"/>
+							</td>
+						</tr>		
+						<tr>
+							<td class="tl zm"><input class="lb" name="login" type="button" value="登  录" onclick="kai()" /></td>
+							<a href="#"><td class="tl forget">忘记密码？</td></a>
+						</tr>
+						
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div id="yanzheng">
+		<div id="xyan">
+			<img id="guan" onclick="guan()"
+			src="../images/tmueng.png" width=20px;
+			alt="">
+			<div id="mpanel4">
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../js/verify.js" ></script>
+	<script type="text/javascript">	
+		yz=false;
+		$('#mpanel4').slideVerify({
+			type : 2,		//类型
+			vOffset : 5,	//误差量，根据需求自行调整
+			vSpace : 5,	//间隔
+			imgName : ['yan1.jpg', 'yan2.jpg'],
+			imgSize : {
+				width: '400px',
+				height: '200px',
+			},
+			blockSize : {
+				width: '40px',
+				height: '40px',
+			},
+			barSize : {
+				width : '400px',
+				height : '40px',
+			},
+			ready : function() {
+			},
+			success : function() {
+				alert('验证成功！');
+				document.getElementById("loginform").submit();			
+			},
+			error : function() {
+				//alert('验证失败！');	
+			}
+			
+		});
+	</script>
+	
+	<script>	
+		//弹出窗口
+		function kai(){
+			var tanchu=document.getElementById('yanzheng');
+			tanchu.style.display = "block";
+		}
+		//关闭窗口
+		function guan(){
+			var tanchu=document.getElementById('yanzheng');
+			tanchu.style.display = "none";
+		}	
+		
+	</script>
+	
+	<canvas id="Mycanvas" width="1920" height="946"></canvas>
+	<script src="../js/lizi.js"></script>	
+	
+</body>
+</html>

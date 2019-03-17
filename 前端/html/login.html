@@ -4,30 +4,65 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link type="text/css" rel="stylesheet" href="../css/login.css" media="screen"  /> 
 <title>高校党员发展管理系统</title>
-
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-<div class="logo">
-高校党员发展管理系统
-</div>
-<div class="login">
-<table id="lt">
-<tr>
-<td class="tl">账号</td>
-<td class="tl">
-<input class="id" name="ID" type="text" placeholder="ID"/>
-</td>
-</tr>
-<tr>
-<td class="tl">密码</td>
-<td class="tl">
-<input class="ps" name="PWD" type="text" placeholder="PassWord"/>
-</td>
-</tr>
-</table>
-<div class="tixing">忘记密码？</div>
-<input class="lb" name="login" type="submit" value="登  录" />
-</div>
+	
+	<div id="zhuti">
+		<div class="logo">
+			高校党员发展管理系统
+		</div>
+		<div class="login">
+			<div id="tbl">
+				<form action="#" method=post name=loginform id="loginform" onsubmit="return checklogin()">
+					<table id="lt">
+						<tr>
+							<td class="tl zm">账号</td>
+							<td class="tl">
+							<input class="id" name="ID" type="text" placeholder="ID"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="tl zm">密码</td>
+							<td class="tl">
+							<input class="ps" name="PWD" type="password" placeholder="PassWord"/>
+							</td>
+						</tr>		
+						<tr>
+							<td class="tl zm"><input class="lb" name="login" type="submit" value="登  录" /></td>
+							<a href="#"><td class="tl forget">忘记密码？</td></a>
+						</tr>
+						
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<canvas id="Mycanvas" width="1920" height="946"></canvas>
+	<script src="../js/lizi.js"></script>
+	<SCRIPT LANGUAGE="javascript"> 
+		function checklogin() { 
+		window.open ('picturescheck.html', 'newwindow', 'height=200, width=400, top=200,left=500, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no,status=no') 
+		}	
+		/*		
+		参数解释： 
+		<SCRIPT LANGUAGE="javascript"> js脚本开始； 
+		window.open 弹出新窗口的命令； 
+		'page.html' 弹出窗口的文件名； 
+		'newwindow' 弹出窗口的名字（不是文件名），非必须，可用空''代替； 
+		height=100 窗口高度； 
+		width=400 窗口宽度； 
+		top=0 窗口距离屏幕上方的象素值； 
+		left=0 窗口距离屏幕左侧的象素值； 
+		toolbar=no 是否显示工具栏，yes为显示； 
+		menubar，scrollbars 表示菜单栏和滚动栏。 
+		resizable=no 是否允许改变窗口大小，yes为允许； 
+		location=no 是否显示地址栏，yes为允许； 
+		status=no 是否显示状态栏内的信息（通常是文件已经打开），yes为允许；
+		*/		
+	</SCRIPT> 	
+
 </body>
 </html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan201.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	function load(){
+		showtime();
+	}
+</script>
+</head>
+
+<body onload="load()">
+	<div id="head">
+		<div id="Name">
+			<div class="xtName">高校党员发展管理系统</div> 
+			<div class="Tgang1">|</div>
+			<div class="Usertype">管理员</div>
+		</div>
+		<div id="Sinfor">
+			<div id="date">
+				
+			</div>
+			<div id="week">
+				
+			</div>
+			<div id="time">
+				
+			</div>
+			<div id="weather">
+				
+			</div>
+		</div>
+		<div id="Ginfor">
+			<div id="portrait">
+				
+			</div>
+			<div id="Xinfor">
+				<div class="wenhou"><div class="username">滕良文</div>老师，欢迎您！</div>
+				<button class="xbt" id="set" onclick="">设置</button>
+				<button class="xbt" id="exit" onclick="">退出</button>
+			</div>
+		</div>
+	</div>
+	<script>
+	//获取Sinfor的信息
+	function showtime(){
+		var dateTime=new Date();
+		var hh=dateTime.getHours();//小时
+		var mm=dateTime.getMinutes();//分钟
+		var ss=dateTime.getSeconds();//秒钟
+		var yy=dateTime.getFullYear();//年份
+		var MM=dateTime.getMonth()+1;  //月份-因为1月这个方法返回为0，所以加1
+		var dd=dateTime.getDate();//日数
+		var week=dateTime.getDay();//周(0~6,0表示星期日)
+		var days=[ "日 ", "一 ", "二 ", "三 ", "四 ", "五 ", "六 ",]
+		document.getElementById("date").innerHTML=yy+"."+((MM < 10) ? "0" : "")+MM+"."+((dd < 10) ? "0" : "")+dd;
+		document.getElementById("week").innerHTML="星期"+days[week];
+		document.getElementById("time").innerHTML=((hh < 10) ? "0" : "")+hh+":"+((mm < 10) ? "0" : "")+mm+":"+((ss < 10) ? "0" : "")+ss;
+		document.getElementById("weather").innerHTML="晴";
+		setTimeout("showtime()", 1000);
+	}
+	</script>
+	
+	<div id="main">
+		<div id="accordion">
+			<div class="col-md-2 sidebar">        
+				<ul class="nav nav-sidebar">
+					<!-- 一级菜单 -->
+					<li class="active">
+						<a href="#query" class="nav-header menu-first collapsed" data-toggle="collapse">
+						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>信息查询</a>
+					</li> 
+					<!-- 二级菜单 -->
+					<ul id="query" class="nav nav-list collapse menu-second">
+						<li><a class="secondbt" href="#" onclick="showAtRight('guanliyuan2011.html')"><span class="glyphicon glyphicon-film"></span> 阶段查询</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('bjquery.html')"><span class="glyphicon glyphicon-th-large"></span> 班级查询</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('grquery.html')"><span class="	glyphicon glyphicon-th"></span> 个人查询</a></li>
+					</ul>
+					<!-- 一级菜单 -->
+					<li>
+						<a href="#apply" class="nav-header menu-first collapsed" data-toggle="collapse">
+						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>发布申请</a>
+					</li> 
+					<!-- 二级菜单 -->
+					<ul id="apply" class="nav nav-list collapse menu-second">
+						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 团推优申请</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 入党积极分子申请</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 发展对象申请</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 预备党员申请</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 党员转正申请</a></li>
+					</ul>
+					<!-- 一级菜单 -->
+					<li>
+						<a href="#check" class="nav-header menu-first collapsed" data-toggle="collapse">
+						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>审批申请</a>
+					</li> 
+					<!-- 二级菜单 -->
+					<ul id="check" class="nav nav-list collapse menu-second">
+						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 团推优审批</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 入党积极分子审批</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 发展对象审批</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 预备党员审批</a></li>
+						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 党员转正审批</a></li>
+					</ul>
+					<!-- 一级菜单 -->
+					<li>
+						<a href="#sign" class="nav-header menu-first collapsed" data-toggle="collapse">
+						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>签到管理</a>
+					</li> 
+					<!-- 二级菜单 -->
+					<ul id="sign" class="nav nav-list collapse menu-second">
+						<li><a class="secondbt" href="###" onclick="showAtRight('sign.html')"><span class="glyphicon glyphicon-film"></span> 党课学习</a></li>
+						<li><a class="secondbt" href="###" onclick="showAtRight('sign.html')"><span class="glyphicon glyphicon-film"></span> 义务劳动</a></li>
+					</ul>    
+				</ul>
+			</div>
+		</div>
+		
+		<script>
+		//加载右侧页面
+			function showAtRight(url){
+				$("#content1").load(url);
+			}
+		</script>
+		
+		<div id="Dinfor">
+			<!-- 右侧内容展示 -->           
+				<div class="col-md-10" style="margin-top:-20px;">
+					<br />
+					<h1 class="page-header"> 欢迎使用<small>   高校党员发展系统</small></h1>
+							
+						<!-- 载入左侧菜单指向的页面 -->
+						<div id="content1">
+				
+							<h4>                    
+								<strong>使用指南：</strong><br>
+								<br><br>默认页面内容……
+							</h4>
+								
+						</div>  
+							
+				</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+	*{
+	margin: 0;
+	padding: 0;
+	margin-top: 0px;
+}
+a{
+	text-decoration: none;
+}
+/*导航条部分*/
+
+#head{
+	width:1536px;
+	height:60px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-color:#21517b;
+	font-family:微软雅黑;
+	color:#ffffff;
+}
+/*系统名*/
+#Name{
+	margin-left: 100px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+.xtName{
+	float: left;
+	font-size:26px;
+	margin-top: 12px;
+	letter-spacing:2px;
+}
+.Tgang1{
+	float: left;
+	font-size:26px;
+	margin-top: 10px;
+	padding-left:8px;
+	padding-right:4px;
+}
+.Usertype{
+	float: left;
+	font-size:20px;
+	margin-top: 20px;
+}
+/*简单信息*/
+#Sinfor{
+	margin-left: 180px;
+	margin-right: 0px;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top:6px;
+	padding-bottom:6px;
+	float: left;
+	font-size:17px;
+	background-color:#708ba7;
+	border-radius:16px;
+}
+/*日期、星期、时间、天气*/
+#date{
+	margin-left: 45px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+#week{
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+#time{
+	margin-left: 50px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+#weather{
+	margin-left: 50px;
+	margin-right: 45px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+/*个人信息*/
+#Ginfor{
+	margin-left: 180px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: left;
+}
+/*头像*/
+#portrait{
+	float: left;
+	width:45px;
+	height:45px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-radius:50%;
+	background-color:#ffffff;	
+}
+/*信息*/
+#Xinfor{
+	width:210px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+/*问候语*/
+.wenhou{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size:13px;
+}
+.username{
+	float:left;
+}
+/*按钮*/
+.xbt{
+	width:40px;
+	height:20px;
+	margin-left: 12px;
+	margin-right: 0px;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border:none;
+	border-radius:10px;
+	color:#000000;
+	background-color:#ffffff;
+	font-size:12px;
+	cursor:pointer;
+}
+/*主体信息部分*/
+/*左边*/
+#accordion{
+	float:left;
+	width:250px;
+	height:950px;
+	background: -moz-linear-gradient(top,#204f7a,#a2b7c9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#204f7a), color-stop(100%,#a2b7c9));
+	font-family:微软雅黑;
+}
+/*手风琴插件*/
+.sidebar{
+	width:250px;
+	display:inline-block;
+    z-index: 100;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+.menu-first{
+	width:250px;
+	margin-left:-8px;
+	display:block;
+	color:#ffffff;
+	background-color:#204f7a;
+	text-decoration:none;
+	font-size:21px;
+	margin-top:0px;
+	margin-bottom:6px;
+}
+.menu-first:hover{
+	
+}
+.ftubiao{
+	padding-right:20px;
+}
+.menu-second li a{
+	margin-left:10px;
+	margin-right:8px;
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:16px;
+}
+.menu-second li a:hover{
+	color:#ffffff;
+	background-color:#9dc3e6;
+}
+a.secondbt{
+	background-color:#2e73b0;
+	margin-left:10px;
+	margin-right:8px;
+	margin-bottom:3px;
+}
+/*右边*/
+#Dinfor{
+	padding-left:5px;
+	background-color:#e7e7e7;
+}
+

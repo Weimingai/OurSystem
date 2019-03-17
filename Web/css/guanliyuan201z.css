@@ -1,0 +1,532 @@
+/*总体*/
+*{
+	margin: 0;
+	padding: 0;
+	margin-top: 0px;
+	padding-left: 0px;
+	font: left;
+	font-family:微软雅黑;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color:#e7e7e7;
+	margin-left:10px;
+}
+/*阶段查询*/
+/*阶段第一部分*/
+/*！！！！！！！！！！！！！！！！！！！！！！！！有待优化*/
+#part11{
+	margin-top:6px;
+	margin-bottom:10px;
+	padding-top:12px;
+	width:1100px;
+	height:38px;
+	background-color:#ffffff;
+	border-radius:6px;
+}
+#part11 ul{
+	
+}
+#part11 ul li{
+	float:left;
+	list-style:none;
+	padding-left:50px;
+	line-height:20px;
+}
+a.daop1{
+	font-family:微软雅黑;
+	font-size:20px;
+	font-weight:bold;
+	color:#a6a6a6;
+}
+a.dangqian{
+	margin-bottom:2px;
+	font-weight:bold;
+	color:#2d75b6;
+	font-size:22px;
+}
+
+/*阶段第二部分*/
+/********************************/
+#part12{
+	width:1050px;
+	height:490px;
+	background-color:#ffffff;
+	border-radius:6px;
+	padding-left:50px;
+}
+
+/*日期*/
+#riqi{
+	float:left;
+	font-size:30px;
+	color:#000000;
+	font-weight:bold;
+	font-family:微软雅黑;
+	padding-top:10px;
+}
+/*时间*/
+#jdtime{
+	padding-left:120px;
+}
+/*年*/
+#jdyears{
+	padding-left:50px;
+}
+/*月*/
+#jdmonths{
+	padding:0px;
+}
+/*年按钮*/
+.jdyybt{
+	border:none;
+	color:#000000;
+	background-color:#ffffff;
+	margin-top:8px;
+	cursor:pointer;
+}
+.jdyybt1{
+	margin-left:50px;
+}
+.jdyybt2{
+	margin-left:113px;
+}
+.jdyybt3{
+	margin-left:260px;
+}
+/*总数按钮*/
+.jdzsbt{
+	width:50px;
+	height:25px;
+	border-style:solid #eaeaea;
+	border-width: 1px;
+	color:#1f4e79;
+	background-color:#b4c6e7;
+	border-radius:5px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	font-size:14.67px;
+	margin-right:42px;
+	cursor:pointer;
+}
+/*月按钮*/
+.jdmmbt{
+	width:50px;
+	height:25px;
+	border-style:solid #eaeaea;
+	border-width: 1px;
+	color:#1f4e79;
+	background-color:#ffffff;
+	border-radius:5px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	font-size:14.67px;
+	margin-top:3px;
+	margin-right:20px;
+	cursor:pointer;
+}
+.jdmmbt:hover{
+	color:#1f4e79;
+	background-color:#b4c6e7;
+}
+/*折线图*/
+#zongshu{
+	float:left;
+	color:#2d75b6;
+	margin-top:90px;
+	width:30px;
+	font-size:30px;
+	font-weight:bold;
+}
+#zhexian11{
+	margin-left:0px;
+	margin-top:-10px;
+	float:left;
+	width:1000px;
+	height:300px;
+}
+/*表格*/
+#tjdclass{
+	font-family:微软雅黑;
+	font-size:14px;
+	color:#585858;
+	border-collapse: collapse;
+}
+.jdct {
+	width:48px;
+	height:30px;
+	text-align:center;
+	border:2px solid #d9d9d9;
+}
+.jdct1{
+	width:110px;
+	border:2px solid #d9d9d9;
+	text-align:center;
+}
+.heng1{
+	float:left;
+	margin-left:10px;
+	margin-top:8px;
+	width:20px;
+	border-top: 3px solid #5b9bd4;
+}
+.heng2{
+	float:left;
+	margin-left:10px;
+	margin-top:8px;
+	width:20px;
+	border-top: 3px solid #ec7c30;
+}
+/*阶段第三部分*/
+/********************************/
+/*竖直轮播*/
+/*!!!!!!!!!!!!!!!!!!!!!!!需要优化*/
+#part13{
+	width:1100px;
+	height:290px;
+}
+#shuzhilb{
+	float:left;
+	margin-left:10px;
+	margin-top:10px;
+	position:relative;
+}
+/*上下信息*/
+.szlb1{
+	margin-left:20px;
+	width:170px;
+	height:80px;
+	text-align:middle;
+	background-color:#d9d9d9;
+	border-radius:8px;
+	font-family:微软雅黑;
+	cursor:pointer;
+}
+.szlb2{
+	position:absolute;
+	top:90px;
+	width:180px;
+	height:90px;
+	text-align:middle;
+	background-color:#ffffff;
+	border-radius:8px;
+	font-family:微软雅黑;
+	cursor:pointer;
+}
+.szlb3{
+	margin-left:20px;
+	margin-top:50px;
+	width:170px;
+	height:80px;
+	text-align:middle;
+	background-color:#d9d9d9;
+	border-radius:8px;
+	font-family:微软雅黑;
+	cursor:pointer;
+}
+.zhuan{
+	margin-left:20px;
+	cursor:pointer;
+}
+/*字*/
+.zuo1{
+	padding-left:20px;
+	float:left;
+	width:20px;
+	font-size:25px;
+	font-weight:bold;
+	color:#9dc3e6;
+	
+}
+.zuo2{
+	float:left;
+	padding-left:15px;
+	padding-top:10px;
+	width:20px;
+	font-size:25px;
+	font-weight:bold;
+	color:#2d75b6;
+	
+}
+.zuo3{
+	float:left;
+	padding-left:15px;
+	padding-top:6px;
+	width:20px;
+	font-size:25px;
+	font-weight:bold;
+	color:#9dc3e6;
+	
+}
+.mathxinxi1{
+	margin-top:0px;
+	margin-left:55px;
+	padding-top:10px;
+	font-size:15px;
+	color:#585858;
+}
+.mathxinxi2{
+	margin-top:15px;
+	margin-left:55px;
+	font-size:16.67px;
+}
+.mathxinxi3{
+	margin-top:0px;
+	margin-left:55px;
+	padding-top:16px;
+	font-size:15px;
+	color:#585858;
+}
+.shuzi1{
+	padding-left:6px;
+	color:#f4b083;
+	font-size:18px;
+}
+.shuzi2{
+	color:#c55a11;
+	font-size:22px;
+	padding-left:10px;
+}
+/*竖直方向的柱状图*/
+#shuzhuzhuangtu{
+	float:left;
+	margin-left:20px;
+	margin-left:18px;
+	margin-top:10px;
+	margin-bottom:20px;
+	width:425px;
+	height:270px;
+	background-color:#ffffff;
+	border-radius:10px;
+}
+#shuzhuzhuangtu11{
+	margin-top:18px;
+	width:425px;
+	height:260px;
+}
+/*水平方向的柱状图*/
+#hengzhuzhuangtu{
+	float:left;
+	margin-left:22px;
+	margin-top:10px;
+	margin-bottom:20px;
+	width:435px;
+	height:270px;
+	background-color:#ffffff;
+	border-radius:10px;
+}
+#hengzhuzhuangtu11{
+	margin-top:18px;
+	margin-left:15px;
+	width:430px;
+	height:260px;
+}
+/*阶段第四部分*/
+/********************************/
+#part14{
+	width:1100px;
+	height:620px;
+	background-color:#ffffff;
+	border-radius:6px;
+	padding-left:0px;
+	margin-bottom:20px;
+}
+/*头*/
+#p14t{
+	padding-top:20px;
+	padding-left:50px;
+}
+.qxzbj{
+	float:left;
+	font-family:微软雅黑;
+	font-size:22px;
+	font-weight:bold;
+	margin-right:30px;
+}
+/*表*/
+#tbjinfo{
+	margin-left:30px;
+	font-family:微软雅黑;
+	font-size:16.67px;
+	color:#585858;
+	border-collapse: collapse;
+	cursor:pointer;
+}
+.bjinfot{
+	width:170px;
+	height:28px;
+	text-align:center;
+	background-color:#eaeef7;
+	border:2px solid #ffffff;
+}
+/* 去掉默认样式，设置新的样式 */
+/**！！！！！！！！！！！！！！！！！！待优化*/
+#select14{
+    display:block;
+    width:200px;
+    height:30px;
+    box-sizing:border-box;
+    background:none;
+    border:1px solid #222;
+	border-radius:15px;
+    outline:none;
+    -webkit-appearance:none;
+    line-height:inherit;
+    color:inherit;
+    cursor:default;
+    font-size:18px;
+	padding-left:60px;
+    position:relative;
+    z-index:3;
+}
+#select14 option{
+    color:#222;
+}
+
+/*尾*/
+/*！！！！！！！！！！！！！！！！！！！待优化*/
+#p14w{
+	margin-top:20px;
+	margin-left:50px;
+	font-family:微软雅黑;
+	font-size:16px;
+}
+.in{
+	width:30px;
+	height:18px;
+	text-align:center;
+	margin-left:10px;
+	margin-right:10px;
+}
+.in2{
+	width:50px;
+	height:25px;
+	text-align:center;
+	margin-left:10px;
+	margin-right:10px;
+}
+.dys{
+	padding-right:220px;
+}
+.dyq{
+	width:45px;
+	height:30px;
+	border:none;
+	font-family:微软雅黑;
+	font-size:16px;
+	border-radius:5px;
+	cursor:pointer;
+}
+.dyq:hover{
+	background-color:#2d75b6;
+	color:#ffffff;
+}
+/***************************************************************************************************/
+/*班级查询*/
+/*到航头*/
+#part21{
+	margin-top:6px;
+	margin-bottom:10px;
+	padding-top:5px;
+	width:1100px;
+	height:35px;
+	background-color:#ffffff;
+	border-radius:6px;
+}
+#p21t{
+	padding-top:0px;
+	padding-left:30px;
+}
+/*班级块*/
+#part22{
+	width:1100px;
+	height:385px;
+	margin-bottom:10px;
+}
+.bjjyi{
+	float:left;
+}
+.classname{
+	background-color:#ffffff;
+	border-radius:6px;
+	font-family:微软雅黑;
+	font-size:38px;
+	color:#2d75b6;
+	padding-left:18px;
+	padding-right:16px;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+.classinfo{
+	padding-left:20px;
+	padding-top:25px;
+	height:275px;
+	background-color:#ffffff;
+	border-radius:6px;
+	margin-top:10px;
+	text-align:left;
+}
+.jdname{
+	font-family:微软雅黑;
+	font-size:24px;
+	color:#000000;
+	line-height:50px;
+}
+.jdnum{
+	font-family:微软雅黑;
+	font-size:28px;
+	font-weight:bold;
+	color:#c55a11;
+}
+.classxji{
+	background-color:#ffffff;
+	border-radius:6px;
+	font-family:微软雅黑;
+	width:890px;
+	height:385px;
+	margin-left:210px;
+}
+/*堆积柱状图*/
+#duijizhuzhuangtu{
+	width:860px;
+	height:360px;
+	padding-top:30px;
+}
+/*班级个人信息表*/
+#part23{
+	width:1100px;
+	height:620px;
+	background-color:#ffffff;
+	border-radius:6px;
+	padding-left:0px;
+	margin-bottom:20px;
+}
+/*头*/
+#p23t{
+	padding-top:20px;
+}
+#part23 ul{
+	
+}
+#part23 ul li{
+	float:left;
+	list-style:none;
+	padding-left:50px;
+}
+.move{
+	margin-top:30px;
+	margin-left:50px;
+	float:none;
+	width:65px;
+	border-top: 3px solid #2d75b6;
+}
+/*尾*/
+#p23w{
+	margin-top:20px;
+	margin-left:50px;
+	font-family:微软雅黑;
+	font-size:16px;
+}
+

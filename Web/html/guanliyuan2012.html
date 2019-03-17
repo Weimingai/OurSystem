@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan201z.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="../js/echarts.js"></script>
+</head>
+
+<body>
+	<div id="part21">
+        <div id="p21t">
+			<div class="qxzbj">请选择班级：</div>
+			<div class="xuznzek">
+				<select id="select14">
+					<option>管理学院</option>
+					<option>信管1701</option>
+					<option>信管1702</option>
+					<option>信管1703</option>
+				</select>
+			</div>
+			<br />
+		</div>
+	</div>
+	
+	<div id="part22">
+		<div class="classlb">
+			<div class="bjjyi">
+				<div class="classname">
+					信管1701
+				</div>
+				<div class="classinfo">
+					<span class="jdname">团&nbsp;推&nbsp;优&nbsp;：</span><span class="jdnum">14</span><br />
+					<span class="jdname">积极分子：</span><span class="jdnum">11</span><br />
+					<span class="jdname">发展对象：</span><span class="jdnum">10</span><br />
+					<span class="jdname">预备党员：</span><span class="jdnum">&nbsp;&nbsp;4</span><br />
+					<span class="jdname">正式党员：</span><span class="jdnum">&nbsp;&nbsp;2</span>
+				</div>
+			</div>
+			<div class="classxji">
+				<div id="duijizhuzhuangtu"></div>
+			</div>
+					
+			<script type="text/javascript">
+				// 基于准备好的dom，初始化echarts实例
+				var myChart21= echarts.init(document.getElementById('duijizhuzhuangtu'));
+				// 指定图表的配置项和数据
+				
+				option21 = {
+					tooltip : {
+						trigger: 'axis',
+						axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+							type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+						}
+					},
+					legend: {
+						data:['2017.12','2018.03','2018.06','2018.09','2018.12','2019.03']
+					},
+					toolbox: {
+						show : true,
+						orient: 'vertical',
+						x: 'right',
+						y: 'center',
+						feature : {
+							magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+						}
+					},
+					calculable : true,
+					xAxis : [
+						{
+							type : 'category',
+							data : ['团推优','积极分子','发展对象','预备党员','正式党员']
+						}
+					],
+					yAxis : [
+						{
+							type : 'value'
+						}
+					],
+					series : [
+						{
+							name:'2017.12',
+							type:'bar',
+							data:[3,1,1,1,1],
+							itemStyle:{  
+							    normal:{color:'#a9561f',   //柱状颜色							
+							    } 
+							}
+						},
+						{
+							name:'2018.03',
+							type:'bar',
+							data:[5,3,2,2,2],
+							itemStyle:{  
+							    normal:{color:'#c46627',   //柱状颜色							
+							    } 
+							}
+						},
+						{
+							name:'2018.06',
+							type:'bar',
+							data:[3,2,2,2,2],
+							itemStyle:{  
+							    normal:{color:'#d9712c',   //柱状颜色							
+							    } 
+							}
+						},
+						{
+							name:'2018.09',
+							type:'bar',
+							data:[3,2,2,2,2],
+							itemStyle:{  
+							    normal:{color:'#ec7c30',   //柱状颜色							
+							    } 
+							}
+						},
+						{
+							name:'2018.12',
+							type:'bar',
+							data:[3,2,2,2,2],
+							itemStyle:{  
+							    normal:{color:'#ef9e79',   //柱状颜色							
+							    } 
+							}
+						},
+						{
+							name:'2019.03',
+							type:'bar',
+							data:[3,2,2,2,2],
+							itemStyle:{  
+							    normal:{color:'#f4b8a3',   //柱状颜色							
+							    } 
+							}
+						}
+					]
+				};
+                    
+				// 使用刚指定的配置项和数据显示图表。
+				myChart21.setOption(option21);
+				</script>
+			
+		</div>
+	</div>
+	
+	<div id="part23">
+		<div id="p23t">
+			<ul>
+            <li><a class="daop1 dangqian" href="#">团推优</a></li>
+            <li><a class="daop1" href="#">入党积极分子</a></li>
+            <li><a class="daop1" href="#">发展对象</a></li>
+            <li><a class="daop1" href="#">预备党员</a></li>
+            <li><a class="daop1" href="#">正式党员</a></li>
+			</ul>
+				<div class="move"> </div>
+			<br />
+		</div>
+		<div id="p23table">
+			<table id="tbjinfo">
+				<tr>
+					<th class="bjinfot">班级</th>
+					<th class="bjinfot">学号</th>
+					<th class="bjinfot">姓名</th>
+					<th class="bjinfot">批次</th>
+					<th class="bjinfot">此阶段时间</th>
+					<th class="bjinfot">现阶段</th>
+				</tr>
+				
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490115</td>
+					<td class="bjinfot">王鑫伟</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">入党积极分子</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490215</td>
+					<td class="bjinfot">蔡正浩</td>
+					<td class="bjinfot">2018.12</td>
+					<td class="bjinfot">3个月</td>
+					<td class="bjinfot">团推优</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490315</td>
+					<td class="bjinfot">郭启哲</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">发展对象</td>
+				</tr>
+				
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490115</td>
+					<td class="bjinfot">王鑫伟</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">入党积极分子</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490215</td>
+					<td class="bjinfot">蔡正浩</td>
+					<td class="bjinfot">2018.12</td>
+					<td class="bjinfot">3个月</td>
+					<td class="bjinfot">团推优</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490315</td>
+					<td class="bjinfot">郭启哲</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">发展对象</td>
+				</tr>
+				
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490115</td>
+					<td class="bjinfot">王鑫伟</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">入党积极分子</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490215</td>
+					<td class="bjinfot">蔡正浩</td>
+					<td class="bjinfot">2018.12</td>
+					<td class="bjinfot">3个月</td>
+					<td class="bjinfot">团推优</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490315</td>
+					<td class="bjinfot">郭启哲</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">发展对象</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490315</td>
+					<td class="bjinfot">郭启哲</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">发展对象</td>
+				</tr>
+				
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490115</td>
+					<td class="bjinfot">王鑫伟</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">入党积极分子</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490215</td>
+					<td class="bjinfot">蔡正浩</td>
+					<td class="bjinfot">2018.12</td>
+					<td class="bjinfot">3个月</td>
+					<td class="bjinfot">团推优</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490315</td>
+					<td class="bjinfot">郭启哲</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">发展对象</td>
+				</tr>
+				
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490115</td>
+					<td class="bjinfot">王鑫伟</td>
+					<td class="bjinfot">2017.12</td>
+					<td class="bjinfot">15个月</td>
+					<td class="bjinfot">入党积极分子</td>
+				</tr>
+				<tr>
+					<td class="bjinfot">信管1701</td>	
+					<td class="bjinfot">0121703490215</td>
+					<td class="bjinfot">蔡正浩</td>
+					<td class="bjinfot">2018.12</td>
+					<td class="bjinfot">3个月</td>
+					<td class="bjinfot">团推优</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		<div id="p23w">
+			<div class="diye">
+				<span class="dys">第  <input class="in" type="text" value="1" />  页</span>  
+				<span class="dys">共 3 页</span> 
+				<span class="dys">每页  
+				<select class="in2">
+					<option>10</option>
+					<option>15</option>
+					<option>20</option>
+					<option>50</option>
+					<option>100</option>
+				</select>  条</span>
+				<span><button class="dyq">确定</button></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
