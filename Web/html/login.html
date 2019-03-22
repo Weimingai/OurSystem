@@ -42,13 +42,16 @@
 	
 	<div id="yanzheng">
 		<div id="xyan">
-			<img id="guan" onclick="guan()"
+			<img id="guan" onclick="guansb()"
 			src="../images/tmueng.png" width=20px;
-			alt="">
+			alt="" />
 			<div id="mpanel4">
 			</div>
 		</div>
 	</div>
+	
+	<canvas id="Mycanvas" width="1920" height="946" style="pointer-events:none"></canvas>
+	<script src="../js/lizi.js"></script>	
 	
 	<script type="text/javascript" src="../js/verify.js" ></script>
 	<script type="text/javascript">	
@@ -90,15 +93,13 @@
 			tanchu.style.display = "block";
 		}
 		//关闭窗口
-		function guan(){
+		function guansb(){
 			var tanchu=document.getElementById('yanzheng');
 			tanchu.style.display = "none";
 		}	
 		
 	</script>
 	
-	<canvas id="Mycanvas" width="1920" height="946"></canvas>
-	<script src="../js/lizi.js"></script>	
 	
 </body>
 </html>

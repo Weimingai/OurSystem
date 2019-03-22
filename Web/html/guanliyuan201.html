@@ -1,48 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="../css/guanliyuan201.css" media="screen"  /> 
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan201z.css" media="screen"  /> 
 <title>高校党员发展管理系统</title>
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <script>
 	function load(){
 		showtime();
 	}
 </script>
+
 </head>
 
 <body onload="load()">
-	<div id="head">
-		<div id="Name">
-			<div class="xtName">高校党员发展管理系统</div> 
-			<div class="Tgang1">|</div>
-			<div class="Usertype">管理员</div>
-		</div>
-		<div id="Sinfor">
-			<div id="date">
-				
+	<div id="header">
+		<div id="head">
+			<div id="Name">
+				<div class="xtName">高校党员发展管理系统</div> 
+				<div class="Tgang1">|</div>
+				<div class="Usertype">管理员</div>
 			</div>
-			<div id="week">
-				
+			<div id="Sinfor">
+				<div id="date">
+					
+				</div>
+				<div id="week">
+					
+				</div>
+				<div id="time">
+					
+				</div>
+				<div id="weather">
+					
+				</div>
 			</div>
-			<div id="time">
-				
-			</div>
-			<div id="weather">
-				
-			</div>
-		</div>
-		<div id="Ginfor">
-			<div id="portrait">
-				
-			</div>
-			<div id="Xinfor">
-				<div class="wenhou"><div class="username">滕良文</div>老师，欢迎您！</div>
-				<button class="xbt" id="set" onclick="">设置</button>
-				<button class="xbt" id="exit" onclick="">退出</button>
+			<div id="Ginfor">
+				<div id="portrait">
+					
+				</div>
+				<div id="Xinfor">
+					<div class="wenhou"><div class="username">滕良文</div>老师，欢迎您！</div>
+					<button class="xbt" id="set" onclick="">设置</button>
+					<button class="xbt" id="exit" onclick="">退出</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -65,87 +68,155 @@
 		setTimeout("showtime()", 1000);
 	}
 	</script>
-	
-	<div id="main">
-		<div id="accordion">
-			<div class="col-md-2 sidebar">        
-				<ul class="nav nav-sidebar">
-					<!-- 一级菜单 -->
-					<li class="active">
-						<a href="#query" class="nav-header menu-first collapsed" data-toggle="collapse">
-						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>信息查询</a>
-					</li> 
-					<!-- 二级菜单 -->
-					<ul id="query" class="nav nav-list collapse menu-second">
-						<li><a class="secondbt" href="#" onclick="showAtRight('guanliyuan2011.html')"><span class="glyphicon glyphicon-film"></span> 阶段查询</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('bjquery.html')"><span class="glyphicon glyphicon-th-large"></span> 班级查询</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('grquery.html')"><span class="	glyphicon glyphicon-th"></span> 个人查询</a></li>
-					</ul>
-					<!-- 一级菜单 -->
-					<li>
-						<a href="#apply" class="nav-header menu-first collapsed" data-toggle="collapse">
-						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>发布申请</a>
-					</li> 
-					<!-- 二级菜单 -->
-					<ul id="apply" class="nav nav-list collapse menu-second">
-						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 团推优申请</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 入党积极分子申请</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 发展对象申请</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 预备党员申请</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('release.html')"><span class="glyphicon glyphicon-film"></span> 党员转正申请</a></li>
-					</ul>
-					<!-- 一级菜单 -->
-					<li>
-						<a href="#check" class="nav-header menu-first collapsed" data-toggle="collapse">
-						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>审批申请</a>
-					</li> 
-					<!-- 二级菜单 -->
-					<ul id="check" class="nav nav-list collapse menu-second">
-						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 团推优审批</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 入党积极分子审批</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 发展对象审批</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 预备党员审批</a></li>
-						<li><a class="secondbt" href="#" onclick="showAtRight('exam.html')"><span class="glyphicon glyphicon-film"></span> 党员转正审批</a></li>
-					</ul>
-					<!-- 一级菜单 -->
-					<li>
-						<a href="#sign" class="nav-header menu-first collapsed" data-toggle="collapse">
-						<span calss="tubiao1"><img src="../images/图标1.png" class="ftubiao" height=40px; weight=40px; /></span>签到管理</a>
-					</li> 
-					<!-- 二级菜单 -->
-					<ul id="sign" class="nav nav-list collapse menu-second">
-						<li><a class="secondbt" href="###" onclick="showAtRight('sign.html')"><span class="glyphicon glyphicon-film"></span> 党课学习</a></li>
-						<li><a class="secondbt" href="###" onclick="showAtRight('sign.html')"><span class="glyphicon glyphicon-film"></span> 义务劳动</a></li>
-					</ul>    
-				</ul>
-			</div>
-		</div>
-		
-		<script>
-		//加载右侧页面
-			function showAtRight(url){
-				$("#content1").load(url);
-			}
-		</script>
-		
-		<div id="Dinfor">
-			<!-- 右侧内容展示 -->           
-				<div class="col-md-10" style="margin-top:-20px;">
-					<br />
-					<h1 class="page-header"> 欢迎使用<small>   高校党员发展系统</small></h1>
+	<div id="mainer">	
+		<div id="main">
+			<table id="tbig">
+				<tr>
+					<td class="leftt">
+						<div id="shofengbg">
+							<ul class="cd-accordion-menu animated">
+								<li class="has-children">
+									<input type="checkbox" name ="group-1" id="group-1">
+									<label for="group-1">信息查询</label>
 							
-						<!-- 载入左侧菜单指向的页面 -->
-						<div id="content1">
-				
-							<h4>                    
-								<strong>使用指南：</strong><br>
-								<br><br>默认页面内容……
-							</h4>
+									<ul>
+										<li class="has-children">
+											<a href="#0" onclick="showAtRight('guanliyuan2011.html')" >阶段查询</a>				
+										</li>
+										<li class="has-children">
+											<a href="#0" onclick="showAtRight('guanliyuan2012.html')" >班级查询</a>
+										</li>
+										<li><a href="#0" onclick="showAtRight('guanliyuan2013.html')" >个人查询</a></li>
+									</ul>
+								</li>
+							
+								<li class="has-children">
+									<input type="checkbox" name ="group-2" id="group-2">
+									<label for="group-2">发布申请</label>
+							
+									<ul>
+										<li><a href="#0">发布申请</a></li>
+										<li><a href="#0">已发布申请</a></li>
+										<li><a href="#0">已完成申请</a></li>
+									</ul>
+								</li>
+							
+								<li class="has-children">
+									<input type="checkbox" name ="group-3" id="group-3">
+									<label for="group-3">审批申请</label>
+							
+									<ul>
+										<li><a href="#0">团推优审批</a></li>
+										<li><a href="#0">积极分子审批</a></li>
+										<li><a href="#0">团推优审批</a></li>
+										<li><a href="#0">预备党员审批</a></li>
+										<li><a href="#0">党员转正审批</a></li>
+									</ul>
+								</li>
+							
+								<li class="has-children">
+									<input type="checkbox" name ="group-4" id="group-4">
+									<label for="group-4">签到管理</label>
+							
+									<ul>
+							
+										<li><a href="#0">义务劳动</a></li>
+										<li><a href="#0">党课学习</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</td>
+					
+					<script type="text/javascript">
+					
+					//手风琴动态
+						jQuery(document).ready(function(){
+							var accordionsMenu = $('.cd-accordion-menu');
+						
+							if( accordionsMenu.length > 0 ) {
 								
-						</div>  
-							
-				</div>
+								accordionsMenu.each(function(){
+									var accordion = $(this);
+									//detect change in the input[type="checkbox"] value
+									accordion.on('change', 'input[type="checkbox"]', function(){
+										var checkbox = $(this);
+										console.log(checkbox.prop('checked'));
+										( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+									});
+								});
+							}
+						});
+					</script>
+					
+					<script>
+						//加载右侧页面
+						/*
+						function showAtRight(url){
+							$("#content1").load(url);
+						}
+						*/
+						$(document).ready(function(){
+							$("#bt").click(function(){
+								$("#content1").load("jdquery.html");
+							});
+						});
+						function showAtRight(url){
+							$("#content1").load(url);
+						}
+						/*
+						var xmlhttp;
+						function loadXMLDoc(url,cfunc)
+						{
+							if (window.XMLHttpRequest)
+							{// IE7+, Firefox, Chrome, Opera, Safari 代码
+								xmlhttp=new XMLHttpRequest();
+							}
+							else
+							{// IE6, IE5 代码
+								xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+							}
+								xmlhttp.onreadystatechange=cfunc;
+								xmlhttp.open("GET",url,true);
+								xmlhttp.send();
+						}
+						function showAtRight(url)
+						{
+							loadXMLDoc(url,function()
+							{
+								if (xmlhttp.readyState==4 && xmlhttp.status==200)
+								{
+									var wssb=document.getElementById("content1");
+									wssb.innerHTML=xmlhttp.responseText;
+									wssb.reload(true);
+								}
+															
+							});												
+										
+						}
+						
+						*/
+					</script>
+					<td class="rightt">
+						<div id="Dinfor">
+							<!-- 右侧内容展示 -->           
+			
+								<!-- 载入左侧菜单指向的页面 -->
+								<div id="content1">
+								
+									<h4>                    
+										<strong>使用指南：</strong><br>
+										<br><br>默认页面内容……
+									</h4>
+										
+								</div>  
+	
+						</div>
+					</td>
+				</tr>
+			</table>
 		</div>
-	</div>
+	</div>	
+	
 </body>
 </html>

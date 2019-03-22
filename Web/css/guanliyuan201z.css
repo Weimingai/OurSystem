@@ -14,6 +14,10 @@ body{
 	background-color:#e7e7e7;
 	margin-left:10px;
 }
+#wp{
+	width:1150px;
+	margin:0 auto;
+}
 /*阶段查询*/
 /*阶段第一部分*/
 /*！！！！！！！！！！！！！！！！！！！！！！！！有待优化*/
@@ -21,18 +25,19 @@ body{
 	margin-top:6px;
 	margin-bottom:10px;
 	padding-top:12px;
-	width:1100px;
+	width:1150px;
 	height:38px;
 	background-color:#ffffff;
 	border-radius:6px;
 }
+
 #part11 ul{
 	
 }
 #part11 ul li{
 	float:left;
 	list-style:none;
-	padding-left:50px;
+	padding-left:80px;
 	line-height:20px;
 }
 a.daop1{
@@ -47,17 +52,25 @@ a.dangqian{
 	color:#2d75b6;
 	font-size:22px;
 }
-
+.move{
+	margin-top:30px;
+	margin-left:80px;
+	float:none;
+	width:65px;
+	border-top: 3px solid #2d75b6;
+}
 /*阶段第二部分*/
 /********************************/
 #part12{
-	width:1050px;
+	width:1150px;
 	height:490px;
 	background-color:#ffffff;
 	border-radius:6px;
-	padding-left:50px;
+	
 }
-
+.part12{
+	padding-left:80px;
+}
 /*日期*/
 #riqi{
 	float:left;
@@ -184,7 +197,7 @@ a.dangqian{
 /*竖直轮播*/
 /*!!!!!!!!!!!!!!!!!!!!!!!需要优化*/
 #part13{
-	width:1100px;
+	width:1150px;
 	height:290px;
 }
 #shuzhilb{
@@ -292,27 +305,26 @@ a.dangqian{
 /*竖直方向的柱状图*/
 #shuzhuzhuangtu{
 	float:left;
-	margin-left:20px;
-	margin-left:18px;
+	margin-left:25px;
 	margin-top:10px;
 	margin-bottom:20px;
-	width:425px;
+	width:450px;
 	height:270px;
 	background-color:#ffffff;
 	border-radius:10px;
 }
 #shuzhuzhuangtu11{
 	margin-top:18px;
-	width:425px;
+	width:430px;
 	height:260px;
 }
 /*水平方向的柱状图*/
 #hengzhuzhuangtu{
 	float:left;
-	margin-left:22px;
+	margin-left:25px;
 	margin-top:10px;
 	margin-bottom:20px;
-	width:435px;
+	width:450px;
 	height:270px;
 	background-color:#ffffff;
 	border-radius:10px;
@@ -320,13 +332,13 @@ a.dangqian{
 #hengzhuzhuangtu11{
 	margin-top:18px;
 	margin-left:15px;
-	width:430px;
+	width:435px;
 	height:260px;
 }
 /*阶段第四部分*/
 /********************************/
 #part14{
-	width:1100px;
+	width:1150px;
 	height:620px;
 	background-color:#ffffff;
 	border-radius:6px;
@@ -336,7 +348,7 @@ a.dangqian{
 /*头*/
 #p14t{
 	padding-top:20px;
-	padding-left:50px;
+	padding-left:60px;
 }
 .qxzbj{
 	float:left;
@@ -347,7 +359,7 @@ a.dangqian{
 }
 /*表*/
 #tbjinfo{
-	margin-left:30px;
+	margin-left:60px;
 	font-family:微软雅黑;
 	font-size:16.67px;
 	color:#585858;
@@ -389,7 +401,7 @@ a.dangqian{
 /*！！！！！！！！！！！！！！！！！！！待优化*/
 #p14w{
 	margin-top:20px;
-	margin-left:50px;
+	margin-left:60px;
 	font-family:微软雅黑;
 	font-size:16px;
 }
@@ -430,18 +442,18 @@ a.dangqian{
 	margin-top:6px;
 	margin-bottom:10px;
 	padding-top:5px;
-	width:1100px;
+	width:1150px;
 	height:35px;
 	background-color:#ffffff;
 	border-radius:6px;
 }
 #p21t{
 	padding-top:0px;
-	padding-left:30px;
+	padding-left:80px;
 }
 /*班级块*/
 #part22{
-	width:1100px;
+	width:1200px;
 	height:385px;
 	margin-bottom:10px;
 }
@@ -454,13 +466,13 @@ a.dangqian{
 	font-family:微软雅黑;
 	font-size:38px;
 	color:#2d75b6;
-	padding-left:18px;
-	padding-right:16px;
+	padding-left:27px;
+	padding-right:20px;
 	padding-top:12px;
 	padding-bottom:12px;
 }
 .classinfo{
-	padding-left:20px;
+	padding-left:27px;
 	padding-top:25px;
 	height:275px;
 	background-color:#ffffff;
@@ -484,9 +496,9 @@ a.dangqian{
 	background-color:#ffffff;
 	border-radius:6px;
 	font-family:微软雅黑;
-	width:890px;
+	width:910px;
 	height:385px;
-	margin-left:210px;
+	margin-left:240px;
 }
 /*堆积柱状图*/
 #duijizhuzhuangtu{
@@ -496,7 +508,7 @@ a.dangqian{
 }
 /*班级个人信息表*/
 #part23{
-	width:1100px;
+	width:1150px;
 	height:620px;
 	background-color:#ffffff;
 	border-radius:6px;
@@ -513,11 +525,11 @@ a.dangqian{
 #part23 ul li{
 	float:left;
 	list-style:none;
-	padding-left:50px;
+	padding-left:60px;
 }
-.move{
+.move2{
 	margin-top:30px;
-	margin-left:50px;
+	margin-left:60px;
 	float:none;
 	width:65px;
 	border-top: 3px solid #2d75b6;
@@ -525,7 +537,7 @@ a.dangqian{
 /*尾*/
 #p23w{
 	margin-top:20px;
-	margin-left:50px;
+	margin-left:60px;
 	font-family:微软雅黑;
 	font-size:16px;
 }
