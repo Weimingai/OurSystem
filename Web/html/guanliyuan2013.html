@@ -9,552 +9,142 @@
 
 <body>
 	<div id="wp">
-		<div id="part11">
-			<ul>
-				<li><a class="daop1 dangqian" href="#">团推优</a></li>
-				<li><a class="daop1" href="#">入党积极分子</a></li>
-				<li><a class="daop1" href="#">发展对象</a></li>
-				<li><a class="daop1" href="#">预备党员</a></li>
-				<li><a class="daop1" href="#">正式党员</a></li>
-			</ul>
-			<div class="move"> </div>
-		</div>
-		<div id="part12">
-			<div class="part12">
-				<div id="jddate">
-					<div id="riqi">
-					日期
+		<div id="part31">
+			<div id="p31t">
+				<form>
+					<div class="queryts">学号查询：
+						<input class="querytext" name="Sno" type="text" />
 					</div>
-					<div id="jdtime">
-						<div id="jdyears">
-							<button class="jdyybt jdyybt1">2017</button>
-							<button class="jdyybt jdyybt2">2018</button>
-							<button class="jdyybt jdyybt3">2019</button>
-						</div>
-						<div id="jdmonths">
-							<button class="jdzsbt">总数</button>
-							<button class="jdmmbt">9月</button>
-							<button class="jdmmbt">12月</button>
-							<button class="jdmmbt">3月</button>
-							<button class="jdmmbt">6月</button>
-							<button class="jdmmbt">9月</button>
-							<button class="jdmmbt">12月</button>
-							<button class="jdmmbt">3月</button>
-							<button class="jdmmbt">6月</button>
-							<button class="jdmmbt">9月</button>
-							<button class="jdmmbt">12月</button>
-						</div>
+					<div class="queryts">姓名查询：
+						<input class="querytext" name="Sname" type="text" />
 					</div>
-				</div>
-				<div id="chart11">
-					<div id="zongshu">总数</div>
-					<div id="zhexian11"></div>
-				</div>
-							
-				<script type="text/javascript">
-					// 基于准备好的dom，初始化echarts实例
-					var myChart11= echarts.init(document.getElementById('zhexian11'));
-					// 指定图表的配置项和数据
-					
-					option11 = {
-						tooltip : {
-							trigger: 'axis'
-						},
-						toolbox: {
-							show : true,
-							feature : {
-								magicType : {show: true, type: ['line', 'bar']},
-							}
-						},
-						calculable : true,
-						xAxis : [
-							{
-								axisLabel: {  
-									interval:0,  
-									rotate:17  
-								},
-								grid: {
-									left: '10%',
-									bottom:'35%'
-								},
-								type : 'category',
-								boundaryGap : false,
-								data : ['会计1701','会计1702','会计1703','会计ACCA1701','财务1701','财务1702','财务1703','信管1701','信管1702','信管1703','人力1701','人力1702','营销1701','营销1702','工商1701','工商1702','工商gj1701']
-							}
-						],
-						yAxis : [
-							{
-								type : 'value',
-								axisLabel : {
-									formatter: '{value} 人'
-								}
-							}
-						],
-						series : [
-							{
-								name:'班级人数',
-								type:'line',
-								data:[36,35,36,28,34,36,35,37,36,36,33,34,29,31,28,28,21],
-								markLine : {
-									data : [
-										{type : 'average', name: '平均值'}
-									]
-								},
-								itemStyle : {
-									normal: {label : {show: true},
-									color: "#5b9bd4",//折线点的颜色
-									lineStyle: {
-										color: "#5b9bd4"//折线的颜色
-									}}}
-							},
-							{
-								name:'团推优人数',
-								type:'line',
-								data:[18,18,17,15,16,18,16,14,17,12,10,8,17,18,12,11,10],
-								markLine : {
-									data : [
-										{type : 'average', name : '平均值'}
-									]
-								},
-								itemStyle : { 
-									normal: {label : {show: true},
-									color: "#ec7c30",//折线点的颜色
-									lineStyle: {
-										color: "#ec7c30"//折线的颜色
-									}}}
-							}
-						]
-					};
-					// 使用刚指定的配置项和数据显示图表。
-					myChart11.setOption(option11);
-				</script>
-				<table id="tjdclass">
-					<tr>
-						<td class="jdct12"></td>
-						<td class="jdct">会计1701</td>
-						<td class="jdct">会计1702</td>
-						<td class="jdct">会计1703</td>
-						<td class="jdct">会计ACCA</td>
-						<td class="jdct">财务1701</td>
-						<td class="jdct">财务1702</td>
-						<td class="jdct">财务1703</td>
-						<td class="jdct">信管1701</td>
-						<td class="jdct">信管1702</td>
-						<td class="jdct">信管1703</td>
-						<td class="jdct">人力1701</td>
-						<td class="jdct">人力1702</td>
-						<td class="jdct">营销1701</td>
-						<td class="jdct">营销1702</td>
-						<td class="jdct">工商1701</td>
-						<td class="jdct">工商1702</td>
-						<td class="jdct">工商gj1701</td>
-					</tr>
-					<tr>
-						<td class="jdct1"><span><div class="heng1"></div></span>班级人数</td>
-						<td class="jdct">36</td>
-						<td class="jdct">36</td>
-						<td class="jdct">35</td>
-						<td class="jdct">28</td>
-						<td class="jdct">34</td>
-						<td class="jdct">36</td>
-						<td class="jdct">35</td>
-						<td class="jdct">37</td>
-						<td class="jdct">36</td>
-						<td class="jdct">36</td>
-						<td class="jdct">33</td>
-						<td class="jdct">34</td>
-						<td class="jdct">29</td>
-						<td class="jdct">31</td>
-						<td class="jdct">28</td>
-						<td class="jdct">28</td>
-						<td class="jdct">21</td>
-					</tr>
-					<tr>
-						<td class="jdct1"><span><div class="heng2"></div></span>团推优</td>
-						<td class="jdct">18</td>
-						<td class="jdct">17</td>
-						<td class="jdct">15</td>
-						<td class="jdct">16</td>
-						<td class="jdct">18</td>
-						<td class="jdct">16</td>
-						<td class="jdct">14</td>
-						<td class="jdct">17</td>
-						<td class="jdct">12</td>
-						<td class="jdct">10</td>
-						<td class="jdct">8</td>
-						<td class="jdct">16</td>
-						<td class="jdct">18</td>
-						<td class="jdct">12</td>
-						<td class="jdct">11</td>
-						<td class="jdct">10</td>
-						<td class="jdct">10</td>
-					</tr>
-				</table>
+					<input class="querybt" type="submit" value="查询" />
+				</form>
 			</div>
 		</div>
-	
-		<div id="part13">
-			<div id="shuzhilb">
-				<img src="../images/shang.png" class="zhuan" id="shang" height=32px; weight=150px; />
-				<div class="szlb1">
-					<div class="zuo1">财务</div>
-					<div class="mathxinxi1">
-						总人数:
-						<span class="shuzi1">105</span>
-						<br />
-						推优数:
-						<span class="shuzi1">50</span>
+		
+		<div id="part32">
+			<table id="tpq1">
+				<tr>
+					<th class="pqt111">基本信息</th>
+					<th class="pqt111"></th>
+				</tr>
+				<tr>
+					<td class="pqt11">姓名:</td>
+					<td class="pqt1" id="Sname">郭启哲</td>
+				</tr>
+				<tr>
+					<td class="pqt11">性别:</td>
+					<td class="pqt1" id="Ssex">男</td>
+				</tr>
+				<tr>
+					<td class="pqt11">学号:</td>
+					<td class="pqt1" id="Sno">0121703490354</td>
+				</tr>
+				<tr>
+					<td class="pqt11">班级:</td>
+					<td class="pqt1" id="Sclass">信管1703</td>
+				</tr>
+				<tr>
+					<td class="pqt11">电话:</td>
+					<td class="pqt1" id="Sno">13852636541</td>
+				</tr>
+				<tr>
+					<td class="pqt11">邮箱:</td>
+					<td class="pqt1" id="Sno">15784455566@126.com</td>
+				</tr>
+				<tr>
+					<td class="pqt11">QQ:</td>
+					<td class="pqt1" id="Sno">15784455566</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="xxsb">发展信息</div>
+		
+		<div id="part33">
+			<div class="pqxx pqxx1">
+				<div class="p33jd" id="p33tt">团推优</div>
+					<div class="bxs xs">
+						<div class="p33xx1">批次</div>
+							<div class="p33xx11t" id="p33tttime">2017.12</div>
+						<div class="p33xx1">此阶段时间</div>
+							<div class="p33xx11t" id="p33ttperiod">15个月</div>
+						<div class="p33xx1">参与党课</div>
+							<div class="p33xx11" id="p33ttdangke1">2018.06 管理学院第九期党课培训班</div>
+							<div class="p33xx11" id="p33ttdangke2">2019.06 管理学院第十期党课培训班</div>
+						<div class="p33xx1">参与考核</div>
+							<div class="p33xx11" id="p33ttkaohe1">2018.09 管院马妍诗词大会</div>
+							<div class="p33xx11" id="p33ttkaohe2">2018.12 管院马妍党员活动</div>
 					</div>
-				</div>
-				<div class="szlb2">
-					<div class="zuo2">信管</div>
-					<div class="mathxinxi2">
-						总人数:
-						<span class="shuzi2">108</span>
-						<br />
-						推优数:
-						<span class="shuzi2">43</span>
-					</div>
-				</div>
-				<div class="szlb3">
-					<div class="zuo3">会计</div>
-					<div class="mathxinxi3">
-						总人数:
-						<span class="shuzi1">105</span>
-						<br />
-						推优数:
-						<span class="shuzi1">50</span>
-					</div>
-				</div>
-				<img src="../images/xia.png" class="zhuan" id="xia" height=30px; weight=150px; />
-			</div>
-			<div id="shuzhuzhuangtu">
-				<div id="shuzhuzhuangtu11">
-				
-				</div>
-			</div>
-				<script type="text/javascript">
-					// 基于准备好的dom，初始化echarts实例
-					var myChart12= echarts.init(document.getElementById('shuzhuzhuangtu11'));
-					// 指定图表的配置项和数据
-					
-					option12 = {					
-						tooltip : {
-							trigger: 'axis'
-						},
-						legend: {
-							data:['推优数']
-						},
-						toolbox: {
-							show : true,
-						},
-						calculable : true,
-						xAxis : [
-							{
-								type : 'category',
-								data : ['信管1701','信管1702','信管1703'],
-								axisLabel: {
-									show: true,
-									textStyle: {
-										fontSize : '16',
-								        fontFamily : '微软雅黑'
-									}
-								}
-							}					
-						],
-						yAxis : [
-							{
-								type : 'value',
-								axisLabel: {
-									show: true,
-									textStyle: {
-										fontSize : '16',
-								        fontFamily : '微软雅黑'
-									}
-								}
-							}
-						],
-						series : [
-							{
-								name:'推优数',
-								type:'bar',
-								data:[14,17,12], 
-								barWidth : 50,//柱图宽度
-								itemStyle:{  
-								    normal:{color:'#5b9bd4',   //柱状颜色
-								        label : {
-								            show : true,  //柱头数字
-								            position : 'top',
-								            textStyle : {
-								                fontSize : '18',
-								                fontFamily : '微软雅黑',
-								            }
-								        }
-								    } 
-								} 
-							}
-						]
-					};
-					// 使用刚指定的配置项和数据显示图表。
-					myChart12.setOption(option12);
-				</script>
-			<div id="hengzhuzhuangtu">
-				<div id="hengzhuzhuangtu11">
-				
-				</div>
 			</div>
 			
-			<script type="text/javascript">
-					// 基于准备好的dom，初始化echarts实例
-					var myChart13= echarts.init(document.getElementById('hengzhuzhuangtu11'));
-					// 指定图表的配置项和数据
-					option13 = {
-						tooltip : {
-							trigger: 'axis',
-							axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-								type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-							}
-						},
-						legend: {
-							data:['推优数', '剩余人数']
-						},
-						toolbox: {
-							show : true,
-							feature : {
-								mark : {show: true},
-							}
-						},
-						calculable : true,
-						xAxis : [
-							{
-								type : 'value'
-							}
-						],
-						yAxis : [
-							{
-								type : 'category',
-								data : ['会计','财务','信管','人力','营销','工商'],
-								axisLabel: {
-									show: true,
-									textStyle: {
-										fontSize : '16',
-								        fontFamily : '微软雅黑'
-									}
-								}
-							}
-						],
-						series : [
-							{
-								name:'推优数',
-								type:'bar',
-								stack: '总量',
-								itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-								data:[50,50,43,18,35,21],
-								itemStyle:{  
-								    normal:{color:'#5b9bd4',   //柱状颜色
-								        label : {
-								            show : true,  //柱头数字
-								            textStyle : {
-								                fontSize : '18',
-								                fontFamily : '微软雅黑',
-								            }
-								        }
-								    } 
-								} 
-							},
-							{
-								name:'剩余人数',
-								type:'bar',
-								stack: '总量',
-								itemStyle : { normal: {label : {show: true, position: 'insideRight'}}},
-								data:[55,55,66,49,25,56],
-								itemStyle:{  
-								    normal:{color:'#ec7c30',   //柱状颜色
-								        label : {
-								            show : true,  //柱头数字
-								            textStyle : {
-								                fontSize : '18',
-								                fontFamily : '微软雅黑',
-								            }
-								        }
-								    } 
-								} 
-							}
-						]
-					};
-					// 使用刚指定的配置项和数据显示图表。
-					myChart13.setOption(option13);
-				</script>
-				<br />
-		</div>
-		<div id="part14">
-			<div id="p14t">
-				<div class="qxzbj">请选择班级：</div>
-				<div class="xuznzek">
-					<select id="select14">
-						<option>管理学院</option>
-						<option>信管1701</option>
-						<option>信管1702</option>
-						<option>信管1703</option>
-					</select>
-				</div>
-				<br />
-			</div>
-			<div id="p14table">
-				<table id="tbjinfo">
-					<tr>
-						<th class="bjinfot">班级</th>
-						<th class="bjinfot">学号</th>
-						<th class="bjinfot">姓名</th>
-						<th class="bjinfot">批次</th>
-						<th class="bjinfot">此阶段时间</th>
-						<th class="bjinfot">现阶段</th>
-					</tr>
-					
-					<tr>
-						<td class="bjinfot">信管1701</td>	
-						<td class="bjinfot">0121703490115</td>
-						<td class="bjinfot">王鑫伟</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">入党积极分子</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1702</td>	
-						<td class="bjinfot">0121703490215</td>
-						<td class="bjinfot">蔡正浩</td>
-						<td class="bjinfot">2018.12</td>
-						<td class="bjinfot">3个月</td>
-						<td class="bjinfot">团推优</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1703</td>	
-						<td class="bjinfot">0121703490315</td>
-						<td class="bjinfot">郭启哲</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">发展对象</td>
-					</tr>
-					
-					<tr>
-						<td class="bjinfot">信管1701</td>	
-						<td class="bjinfot">0121703490115</td>
-						<td class="bjinfot">王鑫伟</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">入党积极分子</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1702</td>	
-						<td class="bjinfot">0121703490215</td>
-						<td class="bjinfot">蔡正浩</td>
-						<td class="bjinfot">2018.12</td>
-						<td class="bjinfot">3个月</td>
-						<td class="bjinfot">团推优</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1703</td>	
-						<td class="bjinfot">0121703490315</td>
-						<td class="bjinfot">郭启哲</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">发展对象</td>
-					</tr>
-					
-					<tr>
-						<td class="bjinfot">信管1701</td>	
-						<td class="bjinfot">0121703490115</td>
-						<td class="bjinfot">王鑫伟</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">入党积极分子</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1702</td>	
-						<td class="bjinfot">0121703490215</td>
-						<td class="bjinfot">蔡正浩</td>
-						<td class="bjinfot">2018.12</td>
-						<td class="bjinfot">3个月</td>
-						<td class="bjinfot">团推优</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1703</td>	
-						<td class="bjinfot">0121703490315</td>
-						<td class="bjinfot">郭启哲</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">发展对象</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1703</td>	
-						<td class="bjinfot">0121703490315</td>
-						<td class="bjinfot">郭启哲</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">发展对象</td>
-					</tr>
-					
-					<tr>
-						<td class="bjinfot">信管1701</td>	
-						<td class="bjinfot">0121703490115</td>
-						<td class="bjinfot">王鑫伟</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">入党积极分子</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1702</td>	
-						<td class="bjinfot">0121703490215</td>
-						<td class="bjinfot">蔡正浩</td>
-						<td class="bjinfot">2018.12</td>
-						<td class="bjinfot">3个月</td>
-						<td class="bjinfot">团推优</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1703</td>	
-						<td class="bjinfot">0121703490315</td>
-						<td class="bjinfot">郭启哲</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">发展对象</td>
-					</tr>
-					
-					<tr>
-						<td class="bjinfot">信管1701</td>	
-						<td class="bjinfot">0121703490115</td>
-						<td class="bjinfot">王鑫伟</td>
-						<td class="bjinfot">2017.12</td>
-						<td class="bjinfot">15个月</td>
-						<td class="bjinfot">入党积极分子</td>
-					</tr>
-					<tr>
-						<td class="bjinfot">信管1702</td>	
-						<td class="bjinfot">0121703490215</td>
-						<td class="bjinfot">蔡正浩</td>
-						<td class="bjinfot">2018.12</td>
-						<td class="bjinfot">3个月</td>
-						<td class="bjinfot">团推优</td>
-					</tr>
-					
-				</table>
+			<div class="pqxx pqxx1">
+				<div class="p33jd" id="p33j">积极分子</div>
+					<div class="bxs xs">
+						<div class="p33xx1">批次</div>
+							<div class="p33xx11t" id="p33tttime">2018.03</div>
+						<div class="p33xx1">此阶段时间</div>
+							<div class="p33xx11t" id="p33ttperiod">03个月</div>
+						<div class="p33xx1">参与党课</div>
+							<div class="p33xx11" id="p33ttdangke1">2018.06 管理学院第九期党课培训班</div>
+							<div class="p33xx11" id="p33ttdangke2">2019.06 管理学院第十期党课培训班</div>
+						<div class="p33xx1">参与考核</div>
+							<div class="p33xx11" id="p33ttkaohe1">2018.09 管院马妍诗词大会</div>
+							<div class="p33xx11" id="p33ttkaohe2">2018.12 管院马妍党员活动</div>
+					</div>
 			</div>
 			
-			<div id="p14w">
-				<div class="diye">
-					<span class="dys">第  <input class="in" type="text" value="1" />  页</span>  
-					<span class="dys">共 3 页</span> 
-					<span class="dys">每页  
-					<select class="in2">
-						<option>10</option>
-						<option>15</option>
-						<option>20</option>
-						<option>50</option>
-						<option>100</option>
-					</select>  条</span>
-					<span><button class="dyq">确定</button></span>
-				</div>
+			<div class="pqxx pqxx1">
+				<div class="p33jd" id="p33f">发展对象</div>
+					<div class="bxs">
+						<div class="p33xx1">批次</div>
+							<div class="p33xx11t" id="p33ftime"></div>
+						<div class="p33xx1">此阶段时间</div>
+							<div class="p33xx11t" id="p33fperiod"></div>
+						<div class="p33xx1">参与党课</div>
+							<div class="p33xx11" id="p33fdangke1"></div>
+							<div class="p33xx11" id="p33fdangke2"></div>
+						<div class="p33xx1">参与考核</div>
+							<div class="p33xx11" id="p33fkaohe1"></div>
+							<div class="p33xx11" id="p33fkaohe2"></div>
+					</div>
 			</div>
+			
+			<div class="pqxx pqxx1">
+				<div class="p33jd" id="p33y">预备党员</div>
+					<div class="bxs">
+						<div class="p33xx1">批次</div>
+							<div class="p33xx11t" id="p33ytime"></div>
+						<div class="p33xx1">此阶段时间</div>
+							<div class="p33xx11t" id="p33yperiod"></div>
+						<div class="p33xx1">参与党课</div>
+							<div class="p33xx11" id="p33ydangke1"></div>
+							<div class="p33xx11" id="p33ydangke2"></div>
+						<div class="p33xx1">参与考核</div>
+							<div class="p33xx11" id="p33ykaohe1"></div>
+							<div class="p33xx11" id="p33ykaohe2"></div>
+					</div>
+			</div>
+			
+			<div class="pqxx">
+				<div class="p33jd" id="p33z">正式党员</div>
+					<div class="bxs">
+						<div class="p33xx1">批次</div>
+							<div class="p33xx11t" id="p33ztime"></div>
+						<div class="p33xx1">此阶段时间</div>
+							<div class="p33xx11t" id="p33zperiod"></div>
+						<div class="p33xx1">参与党课</div>
+							<div class="p33xx11" id="p33zdangke1"></div>
+							<div class="p33xx11" id="p33zdangke2"></div>
+						<div class="p33xx1">参与考核</div>
+							<div class="p33xx11" id="p33zkaohe1"></div>
+							<div class="p33xx11" id="p33zkaohe2"></div>
+					</div>
+			</div>
+			
 		</div>
+
 	</div>
 </body>
 </html>

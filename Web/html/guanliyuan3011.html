@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan301z.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="../js/laydate.js"></script>
+</head>
+
+<body>
+	<div id="wp">
+		<div id="part311">
+			<ul>
+				<li><a class="daop1 dangqian" href="#">团推优</a></li>
+				<li><a class="daop1" href="#">入党积极分子</a></li>
+				<li><a class="daop1" href="#">发展对象</a></li>
+				<li><a class="daop1" href="#">预备党员</a></li>
+				<li><a class="daop1" href="#">正式党员</a></li>
+			</ul>
+			<div class="move31"> </div>
+		</div>
+		
+		<div id="part312">
+			<table>
+				<tr>
+					<td class="p312tl">
+						<div id="p312l">
+							<form name="rapply">
+								<div class="dtset">
+									<div class="p311tishi">提交申请开始时间：</div>
+									日期：<input type="text" class="datetime" id="rasdate"> &nbsp; &nbsp; 
+									时间：<input type="text" class="datetime" id="rastime"> 
+									<div class="p311tishi">提交申请截止时间：</div>
+									日期：<input type="text" class="datetime" id="raedate">  &nbsp; &nbsp; 
+									时间：<input type="text" class="datetime" id="raetime">		
+									<div class="p311tishi">公告：</div>
+									<textarea id="fbgg"></textarea>
+									<br />
+									<input name="SUB" type="submit" class="p312bt" value="提交" />
+									<input name="RSET" type="reset" class="p312bt" value="重置" />
+								</div>
+							</form>
+						</div>
+					</td>	
+					<td class="p312tr">
+						<div id="p312r">
+							<div class="p311info">
+								累计发布次数：<span class="p311xx" id="p311cishu">5次</span>
+								<div class="p311ri">
+									2017年12月01日
+									<br />
+									2018年03月01日
+									<br />
+									2018年06月12日
+									<br />
+									2018年09月11日
+									<br />
+									2018年12月12日
+								</div>
+								距上次发布申请：<span class="p311xx" id="p311tianshu">95天</span>
+								<br />
+								可提交申请人数：<span class="p311xx" id="p311renshu">310人</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<script type="text/javascript">
+			laydate.render({
+			elem: '#rasdate'
+			,btns: ['confirm']
+			});
+			
+			laydate.render({
+			elem: '#rastime'
+			,type: 'time'
+			});
+			laydate.render({
+			elem: '#raedate'
+			,btns: ['confirm']
+			});
+			
+			laydate.render({
+			elem: '#raetime'
+			,type: 'time'
+			});
+		</script>
+		
+	</div>
+</body>
+</html>
