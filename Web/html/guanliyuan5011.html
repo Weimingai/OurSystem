@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan501z.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="../js/laydate.js"></script>
+</head>
+
+<body>
+	<div id="wp">
+		<form name="fbqd">
+			<div id="part511">
+				<div class="p511l">
+					<div class="p511l1">
+						<div class="nei511l1">
+							<span class="hdd">活动类型：</span>
+							<span class="hdx1 p51dq">党课教育 </span>
+							<span class="hdx1">义务劳动 </span>
+							<span class="hdx1">支部建设</span>
+							<br />
+							<span class="hdd">活动名称：</span>
+							<input type="text" name="aname" class="aname" placeholder="管理学院第三十四期入党积极分子培训班">
+							<br />
+							<span class="hdd">活动时间：</span>
+								<input type="text" class="hdtime" id="hddate"> &nbsp;  —&nbsp;
+								<input type="text" class="hdtime" id="hdtime"> 
+						</div>
+					</div>
+					<div class="p511l2">
+						<div class="nei511l2">
+							<span class="hdd">签到时间：</span>
+							<input type="text" class="qiantime" id="daotime1"> &nbsp;  —&nbsp;
+								<input type="text" class="hdtime" id="daotime2"> 
+							<br />
+							<span class="hdd">签退时间：</span>
+							<input type="text" class="qiantime" id="tuitime1"> &nbsp;  —&nbsp;
+								<input type="text" class="qiantime" id="tuitime2"> 
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+				laydate.render({
+				elem: '#hddate'
+				,btns: ['confirm']
+				});
+				
+				laydate.render({
+				elem: '#hdtime'
+				,type: 'time'
+				});
+				laydate.render({
+				elem: '#daotime1'
+				,type: 'time'
+				});
+				
+				laydate.render({
+				elem: '#tuitime1'
+				,type: 'time'
+				});
+				laydate.render({
+				elem: '#daotime2'
+				,type: 'time'
+				});
+				
+				laydate.render({
+				elem: '#tuitime2'
+				,type: 'time'
+				});
+			</script>
+				<div class="p511r">
+					位置：
+				</div>
+			</div>
+			
+			<div id="part512">
+				<div class="nei512">
+					<span class="hdd">选择对象：</span>
+					<br />
+					<span class="hdd2">阶段：</span>
+					<span class="hdx p51dq">团推优 </span>
+					<span class="hdx">入党积极分子 </span>
+					<span class="hdx">发展对象</span>
+					<span class="hdx">预备党员 </span>
+					<span class="hdx">正式党员</span>
+					<br />
+					<span class="hdd2 ">批次：</span>
+					<span class="hdx p51dq">全部</span>
+					<span class="hdx">第一批</span>
+					<span class="hdx">第二批</span>
+					<br />
+					<span class="hdd2">专业：</span>
+					<span class="hdx p51dq">全部</span>
+					<span class="hdx">财务</span>
+					<span class="hdx">会计</span>
+					<span class="hdx">工商</span>
+					<span class="hdx">人力</span>
+					<span class="hdx">营销</span>
+					<span class="hdx">信管</span>
+				</div>
+			</div>
+			
+			<div id="part513">
+				<input name="SUB" type="submit" class="p513bt p513bt1" value="提交" />
+				<input name="RSET" type="reset" class="p513bt" value="重置" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

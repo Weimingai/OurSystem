@@ -213,7 +213,7 @@ a{
 }
 #shofengbg{
 	width: 100%;
-	height:1100px;
+	height:900px;
 	background: -moz-linear-gradient(top,#204f7a,#a2b7c9 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#204f7a), color-stop(100%,#a2b7c9));
 	font-family:微软雅黑;
