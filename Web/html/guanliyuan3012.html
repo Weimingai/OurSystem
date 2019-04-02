@@ -5,6 +5,7 @@
 <link type="text/css" rel="stylesheet" href="../css/guanliyuan301z.css" media="screen"  /> 
 <title>高校党员发展管理系统</title>
 <script src="../js/echarts.js"></script>
+<script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,55 +18,78 @@
 					<br />
 					申请截止时间：<br /><span class="p321ttt" id="p321xj1et">2019.03.19 12:00:00</span>
 				</div>
-				<button class="p321bt" id="edit1">编辑</button><button class="p321bt" id="delete">删除</button>
+				<button class="p321bt p321btsb" id="edit1">编辑</button><button class="p321bt p321bts" id="delete1">删除</button>
 			</div>
 			
 			<div class="p321r">
-				<div class="easyinfo"><span class="tjsp nowtjsp">已提交</span><span class="tjsp">已审批</span><span id="renno">共18人</span></div>
-				<table class="tp321">
-					<tr>
-						<th class="p321t">班级</th>
-						<th class="p321t">学号</th>
-						<th class="p321t">姓名</th>
-						<th class="p321t">提交时间</th>
-						<th class="p321t">状态</th>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-				</table>
+				<div class="easyinfo"><span class="tjsp nowtjsp" id="ytj1">已提交</span><span class="tjsp" id="ysp1">已审批</span><span id="renno">共18人</span></div>
+				<div class="scroll">
+					<table class="tp321">
+						<tr>
+							<th class="p321t">班级</th>
+							<th class="p321t">学号</th>
+							<th class="p321t">姓名</th>
+							<th class="p321t">提交时间</th>
+							<th class="p321t">状态</th>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		
@@ -77,55 +101,99 @@
 					<br />
 					申请截止时间：<br /><span class="p321ttt" id="p321xj1et">2019.03.19 12:00:00</span>
 				</div>
-				<button class="p321bt" id="edit1">编辑</button><button class="p321bt" id="delete">删除</button>
+				<button class="p321bt p321btsb" id="edit1">编辑</button><button class="p321bt p321bts" id="delete2">删除</button>
 			</div>
 			
 			<div class="p321r">
-				<div class="easyinfo"><span class="tjsp nowtjsp">已提交</span><span class="tjsp">已审批</span><span id="renno">共18人</span></div>
-				<table class="tp321">
-					<tr>
-						<th class="p321t">班级</th>
-						<th class="p321t">学号</th>
-						<th class="p321t">姓名</th>
-						<th class="p321t">提交时间</th>
-						<th class="p321t">状态</th>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-				</table>
+				<div class="easyinfo"><span class="tjsp nowtjsp" id="ytj2">已提交</span><span class="tjsp" id="ysp2">已审批</span><span id="renno">共18人</span></div>
+				<div class="scroll">
+					<table class="tp321">
+						<tr>
+							<th class="p321t">班级</th>
+							<th class="p321t">学号</th>
+							<th class="p321t">姓名</th>
+							<th class="p321t">提交时间</th>
+							<th class="p321t">状态</th>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		
@@ -137,55 +205,78 @@
 					<br />
 					申请截止时间：<br /><span class="p321ttt" id="p321xj1et">2019.03.19 12:00:00</span>
 				</div>
-				<button class="p321bt" id="edit1">编辑</button><button class="p321bt" id="delete">删除</button>
+				<button class="p321bt p321btsb" id="edit1">编辑</button><button class="p321bt p321bts" id="delete3">删除</button>
 			</div>
 			
 			<div class="p321r">
-				<div class="easyinfo"><span class="tjsp nowtjsp">已提交</span><span class="tjsp">已审批</span><span id="renno">共18人</span></div>
-				<table class="tp321">
-					<tr>
-						<th class="p321t">班级</th>
-						<th class="p321t">学号</th>
-						<th class="p321t">姓名</th>
-						<th class="p321t">提交时间</th>
-						<th class="p321t">状态</th>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-				</table>
+				<div class="easyinfo"><span class="tjsp nowtjsp" id="ytj3">已提交</span><span class="tjsp" id="ysp3">已审批</span><span id="renno">共18人</span></div>
+				<div class="scroll">
+					<table class="tp321">
+						<tr>
+							<th class="p321t">班级</th>
+							<th class="p321t">学号</th>
+							<th class="p321t">姓名</th>
+							<th class="p321t">提交时间</th>
+							<th class="p321t">状态</th>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		
@@ -197,55 +288,78 @@
 					<br />
 					申请截止时间：<br /><span class="p321ttt" id="p321xj1et">2019.03.19 12:00:00</span>
 				</div>
-				<button class="p321bt" id="edit1">编辑</button><button class="p321bt" id="delete">删除</button>
+				<button class="p321bt p321btsb" id="edit1">编辑</button><button class="p321bt p321bts" id="delet4">删除</button>
 			</div>
 			
 			<div class="p321r">
-				<div class="easyinfo"><span class="tjsp nowtjsp">已提交</span><span class="tjsp">已审批</span><span id="renno">共18人</span></div>
-				<table class="tp321">
-					<tr>
-						<th class="p321t">班级</th>
-						<th class="p321t">学号</th>
-						<th class="p321t">姓名</th>
-						<th class="p321t">提交时间</th>
-						<th class="p321t">状态</th>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-				</table>
+				<div class="easyinfo"><span class="tjsp nowtjsp" id="ytj4">已提交</span><span class="tjsp" id="ysp4">已审批</span><span id="renno">共18人</span></div>
+				<div class="scroll">
+					<table class="tp321">
+						<tr>
+							<th class="p321t">班级</th>
+							<th class="p321t">学号</th>
+							<th class="p321t">姓名</th>
+							<th class="p321t">提交时间</th>
+							<th class="p321t">状态</th>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 		
@@ -257,58 +371,206 @@
 					<br />
 					申请截止时间：<br /><span class="p321ttt" id="p321xj1et">2019.03.19 12:00:00</span>
 				</div>
-				<button class="p321bt" id="edit1">编辑</button><button class="p321bt" id="delete">删除</button>
+				<button class="p321bt p321btsb" id="edit1">编辑</button><button class="p321bt p321bts" id="delete5">删除</button>
 			</div>
 			
 			<div class="p321r">
-				<div class="easyinfo"><span class="tjsp nowtjsp">已提交</span><span class="tjsp">已审批</span><span id="renno">共18人</span></div>
-				<table class="tp321">
-					<tr>
-						<th class="p321t">班级</th>
-						<th class="p321t">学号</th>
-						<th class="p321t">姓名</th>
-						<th class="p321t">提交时间</th>
-						<th class="p321t">状态</th>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-					<tr>
-						<td class="p321t">信管1701</td>
-						<td class="p321t">0121703490312</td>
-						<td class="p321t">郭启哲</td>
-						<td class="p321t p321tti">2019.03.12 12:00:00</td>
-						<td class="p321t">未审批</td>
-					</tr>
-				</table>
+				<div class="easyinfo"><span class="tjsp nowtjsp" id="ytj5">已提交</span><span class="tjsp" id="ysp5">已审批</span><span id="renno">共18人</span></div>
+				<div class="scroll">
+					<table class="tp321">
+						<tr>
+							<th class="p321t">班级</th>
+							<th class="p321t">学号</th>
+							<th class="p321t">姓名</th>
+							<th class="p321t">提交时间</th>
+							<th class="p321t">状态</th>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+						<tr>
+							<td class="p321t">信管1701</td>
+							<td class="p321t">0121703490312</td>
+							<td class="p321t">郭启哲</td>
+							<td class="p321t p321tti">2019.03.12 12:00:00</td>
+							<td class="p321t">未审批</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
-
+			
+			<script>
+			var ytj1 = document.getElementById("ytj1");
+			var ytj2 = document.getElementById("ytj2");
+			var ytj3 = document.getElementById("ytj3");
+			var ytj4 = document.getElementById("ytj4");
+			var ytj5 = document.getElementById("ytj5");
+			var ysp1 = document.getElementById("ysp1");
+			var ysp2 = document.getElementById("ysp2");
+			var ysp3 = document.getElementById("ysp3");
+			var ysp4 = document.getElementById("ysp4");
+			var ysp5 = document.getElementById("ysp5");
+			
+			ytj1.onclick=function(){			
+				ysp1.classList.remove('nowtjsp');
+				ytj1.classList.add("nowtjsp");
+			}
+			ytj2.onclick=function(){			
+				ysp2.classList.remove('nowtjsp');
+				ytj2.classList.add("nowtjsp");
+			}
+			ytj3.onclick=function(){			
+				ysp3.classList.remove('nowtjsp');
+				ytj3.classList.add("nowtjsp");
+			}
+			ytj4.onclick=function(){			
+				ysp4.classList.remove('nowtjsp');
+				ytj4.classList.add("nowtjsp");
+			}
+			ytj5.onclick=function(){			
+				ysp5classList.remove('nowtjsp');
+				ytj5.classList.add("nowtjsp");
+			}
+			
+			ysp1.onclick=function(){			
+				ytj1.classList.remove('nowtjsp');
+				ysp1.classList.add("nowtjsp");
+			}
+			ysp2.onclick=function(){			
+				ytj2.classList.remove('nowtjsp');
+				ysp2.classList.add("nowtjsp");
+			}
+			ysp3.onclick=function(){			
+				ytj3.classList.remove('nowtjsp');
+				ysp3.classList.add("nowtjsp");
+			}
+			ysp4.onclick=function(){			
+				ytj4.classList.remove('nowtjsp');
+				ysp4.classList.add("nowtjsp");
+			}
+			ysp5.onclick=function(){			
+				ytj5.classList.remove('nowtjsp');
+				ysp5.classList.add("nowtjsp");
+			}
+			
+			
+			</script>
 	</div>
+	
+	<div class="mask1" id="masksb1">
+		<div class="modelbox1">
+			<div class="mbts">
+				<button class="mbtsbt">提示</button>
+			</div>
+			<div class="mbmain">
+				该条申请删除后不可恢复，<br />确认删除吗？
+				<br />
+				<button class="mbbt" id="queren">确认</button> <button class="mbbt" id="quxiao">取消</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(".p321bts").click(function(){
+			var xianshi = document.getElementById("masksb1");						
+			xianshi.classList.add("nowxs");
+		});
+		$("#quxiao").click(function(){
+			var xianshi = document.getElementById("masksb1");						
+			xianshi.classList.remove("nowxs");
+		});
+		$("#queren").click(function(){
+			var xianshi = document.getElementById("masksb1");						
+			xianshi.classList.remove("nowxs");
+		});
+	</script>
+	
+	<div class="mask2" id="masksb2">
+		<div class="modelbox2">
+			<table>
+					<tr>
+						<td class="p312tl">
+							<div id="p312l">
+								<form name="rapply">
+									<div class="dtset">
+										<div class="p311tishi">提交申请开始时间：</div>
+										日期：<input type="text" class="datetime" id="rasdate"> &nbsp; &nbsp; 
+										时间：<input type="text" class="datetime" id="rastime"> 
+										<div class="p311tishi">提交申请截止时间：</div>
+										日期：<input type="text" class="datetime" id="raedate">  &nbsp; &nbsp; 
+										时间：<input type="text" class="datetime" id="raetime">		
+										<div class="p311tishi">公告：</div>
+										<textarea id="fbgg"></textarea>
+										<br />
+										<input name="SUB" type="submit" class="p312btm" value="提交" />
+										<input name="RSET" type="reset" class="p312btmt" value="重置" />
+										<input name="fanhui" type="button" class="p312btm" value="取消" />
+									</div>
+								</form>
+							</div>
+						</td>	
+						
+					</tr>
+			</table>
+		</div>
+	</div>
+	
+	<script>
+		$(".p321btsb").click(function(){
+			var xianshi = document.getElementById("masksb2");						
+			xianshi.classList.add("nowxs2");
+		});
+		$(".p312btm").click(function(){
+			var xianshi = document.getElementById("masksb2");						
+			xianshi.classList.remove("nowxs2");
+		});
+	</script>
+	
 </body>
 </html>

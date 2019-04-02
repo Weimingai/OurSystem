@@ -40,13 +40,13 @@ body{
 	padding-left:80px;
 	line-height:20px;
 }
-a.daop1{
+a.daop411{
 	font-family:微软雅黑;
 	font-size:20px;
 	font-weight:bold;
 	color:#a6a6a6;
 }
-a.dangqian{
+a.dangqian411{
 	margin-bottom:2px;
 	font-weight:bold;
 	color:#2d75b6;
@@ -59,6 +59,42 @@ a.dangqian{
 	width:45px;
 	border-top: 3px solid #2d75b6;
 }
+.move413{
+	margin-top:30px;
+	margin-left:342px;
+	float:none;
+	width:129px;
+	border-top: 3px solid #2d75b6;
+}
+.move414{
+	margin-top:30px;
+	margin-left:540px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move415{
+	margin-top:30px;
+	margin-left:698px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move416{
+	margin-top:30px;
+	margin-left:858px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move412{
+	margin-top:30px;
+	margin-left:198px;
+	float:none;
+	width:68px;
+	border-top: 3px solid #2d75b6;
+}
+
 /*待审批第一部分*/
 #part412{
 	margin-top:6px;
@@ -202,7 +238,80 @@ a.dangqian{
 	background-color:#2d75b6;
 	color:#ffffff;
 }
+/***********第二部分*/
+#part421{
+	margin-top:6px;
+	margin-bottom:10px;
+	padding-top:12px;
+	width:1150px;
+	height:38px;
+	background-color:#ffffff;
+	border-radius:6px;
+}
 
+#part421 ul{
+	
+}
+#part421 ul li{
+	float:left;
+	list-style:none;
+	padding-left:80px;
+	line-height:20px;
+}
+a.daop421{
+	font-family:微软雅黑;
+	font-size:20px;
+	font-weight:bold;
+	color:#a6a6a6;
+}
+a.dangqian421{
+	margin-bottom:2px;
+	font-weight:bold;
+	color:#2d75b6;
+	font-size:22px;
+}
+.move421{
+	margin-top:30px;
+	margin-left:80px;
+	float:none;
+	width:45px;
+	border-top: 3px solid #2d75b6;
+}
+.move423{
+	margin-top:30px;
+	margin-left:342px;
+	float:none;
+	width:129px;
+	border-top: 3px solid #2d75b6;
+}
+.move424{
+	margin-top:30px;
+	margin-left:540px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move425{
+	margin-top:30px;
+	margin-left:698px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move426{
+	margin-top:30px;
+	margin-left:858px;
+	float:none;
+	width:90px;
+	border-top: 3px solid #2d75b6;
+}
+.move422{
+	margin-top:30px;
+	margin-left:198px;
+	float:none;
+	width:68px;
+	border-top: 3px solid #2d75b6;
+}
 
 
 

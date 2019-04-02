@@ -5,25 +5,132 @@
 <link type="text/css" rel="stylesheet" href="../css/guanliyuan301z.css" media="screen"  /> 
 <title>高校党员发展管理系统</title>
 <script src="../js/laydate.js"></script>
+<script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
 	<div id="wp">
 		<div id="part331">
 			<ul>
-				<li><a class="daop1 dangqian" href="#">全部</a></li>
-				<li><a class="daop1" href="#">团推优</a></li>
-				<li><a class="daop1" href="#">入党积极分子</a></li>
-				<li><a class="daop1" href="#">发展对象</a></li>
-				<li><a class="daop1" href="#">预备党员</a></li>
-				<li><a class="daop1" href="#">正式党员</a></li>
+				<li><a class="daop331 dangqian331" id="b331t1" href="#">全部</a></li>
+				<li><a class="daop331" id="b331t2" href="#">团推优</a></li>
+				<li><a class="daop331" id="b331t3" href="#">入党积极分子</a></li>
+				<li><a class="daop331" id="b331t4" href="#">发展对象</a></li>
+				<li><a class="daop331" id="b331t5" href="#">预备党员</a></li>
+				<li><a class="daop331" id="b331t6" href="#">正式党员</a></li>
 			</ul>
-			<div class="move331"> </div>
+			<div class="move331" id="m331"> </div>
 			
 			<div class="p331shijianduan">
-				时间：<input type="text" id="p331sd" />日<input type="text" id="p331st" /> 至 <input type="text" id="p331ed" />日<input type="text" id="p331st" />
+				时间：<input type="text" id="p331sd" />日<input type="text" id="p331st" /> 至 <input type="text" id="p331ed" />日<input type="text" id="p331et" />
 			</div>
 		</div>
+		
+		<script>
+		//阶段选择
+			var btns1 = document.getElementById("b331t1");
+			var btns2 = document.getElementById("b331t2");
+			var btns3 = document.getElementById("b331t3");
+			var btns4 = document.getElementById("b331t4");
+			var btns5 = document.getElementById("b331t5");
+			var btns6 = document.getElementById("b331t6");
+			var moves = document.getElementById("m331");
+			
+			btns1.onclick=function(){			
+				btns2.classList.remove('dangqian331');
+				btns3.classList.remove('dangqian331');
+				btns4.classList.remove('dangqian331');
+				btns5.classList.remove('dangqian331');
+				btns6.classList.remove('dangqian331');
+				btns1.classList.add("dangqian331");
+				
+				moves.classList.remove("move332");
+				moves.classList.remove("move333");
+				moves.classList.remove("move334");
+				moves.classList.remove("move335");
+				moves.classList.remove("move336");
+			}
+			
+			
+			btns2.onclick=function(){
+				btns1.classList.remove('dangqian331');
+				btns3.classList.remove('dangqian331');
+				btns4.classList.remove('dangqian331');
+				btns5.classList.remove('dangqian331');
+				btns6.classList.remove('dangqian331');
+				btns2.classList.add("dangqian331");
+				
+				moves.classList.remove("move333");
+				moves.classList.remove("move334");
+				moves.classList.remove("move335");
+				moves.classList.remove("move336");
+				moves.classList.add("move332");
+			}
+			
+			
+			btns3.onclick=function(){
+				btns2.classList.remove('dangqian331');
+				btns1.classList.remove('dangqian331');
+				btns4.classList.remove('dangqian331');
+				btns5.classList.remove('dangqian331');
+				btns6.classList.remove('dangqian331');
+				btns3.classList.add("dangqian331");
+				
+				moves.classList.remove("move332");
+				moves.classList.remove("move334");
+				moves.classList.remove("move335");
+				moves.classList.remove("move336");
+				moves.classList.add("move333");
+			}
+			
+		
+			btns4.onclick=function(){
+				btns2.classList.remove('dangqian331');
+				btns3.classList.remove('dangqian331');
+				btns1.classList.remove('dangqian331');
+				btns5.classList.remove('dangqian331');
+				btns6.classList.remove('dangqian331');
+				btns4.classList.add("dangqian331");
+				
+				moves.classList.remove("move332");
+				moves.classList.remove("move333");
+				moves.classList.remove("move335");
+				moves.classList.remove("move336");
+				moves.classList.add("move334");
+			}
+			
+		
+			btns5.onclick=function(){
+				btns2.classList.remove('dangqian331');
+				btns3.classList.remove('dangqian331');
+				btns4.classList.remove('dangqian331');
+				btns1.classList.remove('dangqian331');
+				btns6.classList.remove('dangqian331');
+				btns5.classList.add("dangqian331");
+				
+				moves.classList.remove("move332");
+				moves.classList.remove("move333");
+				moves.classList.remove("move334");
+				moves.classList.remove("move336");
+				moves.classList.add("move335");
+			}
+			
+			btns6.onclick=function(){
+				btns2.classList.remove('dangqian331');
+				btns3.classList.remove('dangqian331');
+				btns4.classList.remove('dangqian331');
+				btns1.classList.remove('dangqian331');
+				btns5.classList.remove('dangqian331');
+				btns6.classList.add("dangqian331");
+				
+				moves.classList.remove("move332");
+				moves.classList.remove("move333");
+				moves.classList.remove("move334");
+				moves.classList.remove("move335");
+				moves.classList.add("move336");
+			}
+			
+		</script>
 		
 		<script type="text/javascript">
 			laydate.render({
@@ -284,7 +391,11 @@
 			
 			
 		</div>
-		
+		<script>
+		$(".p332jd").click(function(){
+			showAtRight('guanliyuan30133.html')
+		});
+	</script>
 	</div>
 </body>
 </html>

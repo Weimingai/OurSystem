@@ -15,9 +15,9 @@
 					<div class="p511l1">
 						<div class="nei511l1">
 							<span class="hdd">活动类型：</span>
-							<span class="hdx1 p51dq">党课教育 </span>
-							<span class="hdx1">义务劳动 </span>
-							<span class="hdx1">支部建设</span>
+							<span class="hdx1 p51dq" id="act1">党课教育 </span>
+							<span class="hdx1" id="act2">义务劳动 </span>
+							<span class="hdx1" id="act3">支部建设</span>
 							<br />
 							<span class="hdd">活动名称：</span>
 							<input type="text" name="aname" class="aname" placeholder="管理学院第三十四期入党积极分子培训班">
@@ -27,6 +27,28 @@
 								<input type="text" class="hdtime" id="hdtime"> 
 						</div>
 					</div>
+					<script>
+						//活动类型
+						var ac1 = document.getElementById("act1");
+						var ac2 = document.getElementById("act2");
+						var ac3 = document.getElementById("act3");
+						
+						ac1.onclick=function(){			
+							ac2.classList.remove('p51dq');
+							ac3.classList.remove('p51dq');
+							ac1.classList.add("p51dq");
+						}	
+						ac2.onclick=function(){			
+							ac1.classList.remove('p51dq');
+							ac3.classList.remove('p51dq');
+							ac2.classList.add("p51dq");
+						}
+						ac3.onclick=function(){			
+							ac2.classList.remove('p51dq');
+							ac1.classList.remove('p51dq');
+							ac3.classList.add("p51dq");
+						}
+					</script>
 					<div class="p511l2">
 						<div class="nei511l2">
 							<span class="hdd">签到时间：</span>
@@ -78,27 +100,164 @@
 					<span class="hdd">选择对象：</span>
 					<br />
 					<span class="hdd2">阶段：</span>
-					<span class="hdx p51dq">团推优 </span>
-					<span class="hdx">入党积极分子 </span>
-					<span class="hdx">发展对象</span>
-					<span class="hdx">预备党员 </span>
-					<span class="hdx">正式党员</span>
+					<span class="hdx p51dq2" id="jd1">团推优 </span>
+					<span class="hdx" id="jd2">入党积极分子 </span>
+					<span class="hdx" id="jd3">发展对象</span>
+					<span class="hdx" id="jd4">预备党员 </span>
+					<span class="hdx" id="jd5">正式党员</span>
 					<br />
 					<span class="hdd2 ">批次：</span>
-					<span class="hdx p51dq">全部</span>
-					<span class="hdx">第一批</span>
-					<span class="hdx">第二批</span>
+					<span class="hdx p51dq3" id="pa">全部</span>
+					<span class="hdx" id="pa1">第一批</span>
+					<span class="hdx" id="pa2">第二批</span>
 					<br />
 					<span class="hdd2">专业：</span>
-					<span class="hdx p51dq">全部</span>
-					<span class="hdx">财务</span>
-					<span class="hdx">会计</span>
-					<span class="hdx">工商</span>
-					<span class="hdx">人力</span>
-					<span class="hdx">营销</span>
-					<span class="hdx">信管</span>
+					<span class="hdx p51dq4" id="zy">全部</span>
+					<span class="hdx" id="zy1">财务</span>
+					<span class="hdx" id="zy2">会计</span>
+					<span class="hdx" id="zy3">工商</span>
+					<span class="hdx" id="zy4">人力</span>
+					<span class="hdx" id="zy5">营销</span>
+					<span class="hdx" id="zy6">信管</span>
 				</div>
 			</div>
+			
+			<script>
+						//阶段类型
+						var jd1 = document.getElementById("jd1");
+						var jd2 = document.getElementById("jd2");
+						var jd3 = document.getElementById("jd3");
+						var jd4 = document.getElementById("jd4");
+						var jd5 = document.getElementById("jd5");
+						
+						jd1.onclick=function(){			
+							jd2.classList.remove('p51dq2');
+							jd3.classList.remove('p51dq2');
+							jd4.classList.remove('p51dq2');
+							jd5.classList.remove('p51dq2');
+							jd1.classList.add("p51dq2");
+						}	
+						jd2.onclick=function(){			
+							jd1.classList.remove('p51dq2');
+							jd3.classList.remove('p51dq2');
+							jd4.classList.remove('p51dq2');
+							jd5.classList.remove('p51dq2');
+							jd2.classList.add("p51dq2");
+						}
+						jd3.onclick=function(){			
+							jd2.classList.remove('p51dq2');
+							jd1.classList.remove('p51dq2');
+							jd4.classList.remove('p51dq2');
+							jd5.classList.remove('p51dq2');
+							jd3.classList.add("p51dq2");
+						}
+						jd4.onclick=function(){			
+							jd2.classList.remove('p51dq2');
+							jd3.classList.remove('p51dq2');
+							jd1.classList.remove('p51dq2');
+							jd5.classList.remove('p51dq2');
+							jd4.classList.add("p51dq2");
+						}
+						jd5.onclick=function(){			
+							jd2.classList.remove('p51dq2');
+							jd3.classList.remove('p51dq2');
+							jd4.classList.remove('p51dq2');
+							jd1.classList.remove('p51dq2');
+							jd5.classList.add("p51dq2");
+						}
+						//批次选择
+						var pa1 = document.getElementById("pa1");
+						var pa2 = document.getElementById("pa2");
+						var pa = document.getElementById("pa");
+						
+						pa1.onclick=function(){			
+							pa2.classList.remove('p51dq3');
+							pa.classList.remove('p51dq3');
+							pa1.classList.add("p51dq3");
+						}	
+						pa2.onclick=function(){			
+							pa1.classList.remove('p51dq3');
+							pa.classList.remove('p51dq3');
+							pa2.classList.add("p51dq3");
+						}
+						pa.onclick=function(){			
+							pa2.classList.remove('p51dq3');
+							pa1.classList.remove('p51dq3');
+							pa.classList.add("p51dq3");
+						}
+						//专业选择
+						var zy = document.getElementById("zy");
+						var zy1 = document.getElementById("zy1");
+						var zy2 = document.getElementById("zy2");
+						var zy3 = document.getElementById("zy3");
+						var zy4 = document.getElementById("zy4");
+						var zy5 = document.getElementById("zy5");
+						var zy6 = document.getElementById("zy6");
+						
+						zy.onclick=function(){		
+							zy1.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy.classList.add("p51dq4");
+						}	
+						zy1.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy1.classList.add("p51dq4");
+						}	
+						zy2.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy1.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy2.classList.add("p51dq4");
+						}
+						zy3.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy1.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy3.classList.add("p51dq4");
+						}
+						zy4.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy1.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy4.classList.add("p51dq4");
+						}
+						zy5.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy1.classList.remove('p51dq4');
+							zy6.classList.remove('p51dq4');
+							zy5.classList.add("p51dq4");
+						}
+						zy6.onclick=function(){		
+							zy.classList.remove('p51dq4');						
+							zy2.classList.remove('p51dq4');
+							zy3.classList.remove('p51dq4');
+							zy4.classList.remove('p51dq4');
+							zy5.classList.remove('p51dq4');
+							zy1.classList.remove('p51dq4');
+							zy6.classList.add("p51dq4");
+						}
+					</script>
 			
 			<div id="part513">
 				<input name="SUB" type="submit" class="p513bt p513bt1" value="提交" />

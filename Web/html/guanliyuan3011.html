@@ -11,14 +11,94 @@
 	<div id="wp">
 		<div id="part311">
 			<ul>
-				<li><a class="daop1 dangqian" href="#">团推优</a></li>
-				<li><a class="daop1" href="#">入党积极分子</a></li>
-				<li><a class="daop1" href="#">发展对象</a></li>
-				<li><a class="daop1" href="#">预备党员</a></li>
-				<li><a class="daop1" href="#">正式党员</a></li>
+				<li><a class="daop311 dangqian311" id="b311t1" href="#">团推优</a></li>
+				<li><a class="daop311" id="b311t2" href="#">入党积极分子</a></li>
+				<li><a class="daop311" id="b311t3" href="#">发展对象</a></li>
+				<li><a class="daop311" id="b311t4" href="#">预备党员</a></li>
+				<li><a class="daop311" id="b311t5" href="#">正式党员</a></li>
 			</ul>
-			<div class="move31"> </div>
+			<div class="move31" id="m311"> </div>
 		</div>
+		
+		<script>
+		//阶段选择
+			var btn1 = document.getElementById("b311t1");
+			var btn2 = document.getElementById("b311t2");
+			var btn3 = document.getElementById("b311t3");
+			var btn4 = document.getElementById("b311t4");
+			var btn5 = document.getElementById("b311t5");
+			var move = document.getElementById("m311");
+			
+			btn1.onclick=function(){			
+				btn2.classList.remove('dangqian311');
+				btn3.classList.remove('dangqian311');
+				btn4.classList.remove('dangqian311');
+				btn5.classList.remove('dangqian311');
+				btn1.classList.add("dangqian311");
+				
+				move.classList.remove("move312");
+				move.classList.remove("move313");
+				move.classList.remove("move314");
+				move.classList.remove("move315");
+			}
+			
+			
+			btn2.onclick=function(){
+				btn1.classList.remove('dangqian311');
+				btn3.classList.remove('dangqian311');
+				btn4.classList.remove('dangqian311');
+				btn5.classList.remove('dangqian311');
+				btn2.classList.add("dangqian311");
+				
+				move.classList.remove("move313");
+				move.classList.remove("move314");
+				move.classList.remove("move315");
+				move.classList.add("move312");
+			}
+			
+			
+			btn3.onclick=function(){
+				btn2.classList.remove('dangqian311');
+				btn1.classList.remove('dangqian311');
+				btn4.classList.remove('dangqian311');
+				btn5.classList.remove('dangqian311');
+				btn3.classList.add("dangqian311");
+				
+				move.classList.remove("move312");
+				move.classList.remove("move314");
+				move.classList.remove("move315");
+				move.classList.add("move313");
+			}
+			
+		
+			btn4.onclick=function(){
+				btn2.classList.remove('dangqian311');
+				btn3.classList.remove('dangqian311');
+				btn1.classList.remove('dangqian311');
+				btn5.classList.remove('dangqian311');
+				btn4.classList.add("dangqian311");
+				
+				move.classList.remove("move312");
+				move.classList.remove("move313");
+				move.classList.remove("move315");
+				move.classList.add("move314");
+			}
+			
+		
+			btn5.onclick=function(){
+				btn2.classList.remove('dangqian311');
+				btn3.classList.remove('dangqian311');
+				btn4.classList.remove('dangqian311');
+				btn1.classList.remove('dangqian311');
+				btn5.classList.add("dangqian311");
+				
+				move.classList.remove("move312");
+				move.classList.remove("move313");
+				move.classList.remove("move314");
+				move.classList.add("move315");
+			}
+			
+		</script>
 		
 		<div id="part312">
 			<table>

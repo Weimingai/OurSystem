@@ -11,17 +11,123 @@
 	<div id="wp">
 		<div id="part411">
 			<ul>
-				<li><a class="daop1 dangqian" href="#">全部</a></li>
-				<li><a class="daop1" href="#">团推优</a></li>
-				<li><a class="daop1" href="#">入党积极分子</a></li>
-				<li><a class="daop1" href="#">发展对象</a></li>
-				<li><a class="daop1" href="#">预备党员</a></li>
-				<li><a class="daop1" href="#">正式党员</a></li>
+				<li><a class="daop411 dangqian411" id="b411t1" href="#">全部</a></li>
+				<li><a class="daop411" id="b411t2" href="#">团推优</a></li>
+				<li><a class="daop411" id="b411t3" href="#">入党积极分子</a></li>
+				<li><a class="daop411" id="b411t4" href="#">发展对象</a></li>
+				<li><a class="daop411" id="b411t5" href="#">预备党员</a></li>
+				<li><a class="daop411" id="b411t6" href="#">正式党员</a></li>
 			</ul>
-			<div class="move411"> </div>
+			<div class="move411" id="m411"> </div>
 			
 			
 		</div>
+		
+		<script>
+		//阶段选择
+			var btns41 = document.getElementById("b411t1");
+			var btns42 = document.getElementById("b411t2");
+			var btns43 = document.getElementById("b411t3");
+			var btns44 = document.getElementById("b411t4");
+			var btns45 = document.getElementById("b411t5");
+			var btns46 = document.getElementById("b411t6");
+			var moves4 = document.getElementById("m411");
+			
+			btns41.onclick=function(){			
+				btns42.classList.remove('dangqian411');
+				btns43.classList.remove('dangqian411');
+				btns44.classList.remove('dangqian411');
+				btns45.classList.remove('dangqian411');
+				btns46.classList.remove('dangqian411');
+				btns41.classList.add("dangqian411");
+				
+				moves4.classList.remove("move412");
+				moves4.classList.remove("move413");
+				moves4.classList.remove("move414");
+				moves4.classList.remove("move415");
+				moves4.classList.remove("move416");
+			}
+			
+			
+			btns42.onclick=function(){
+				btns41.classList.remove('dangqian411');
+				btns43.classList.remove('dangqian411');
+				btns44.classList.remove('dangqian411');
+				btns45.classList.remove('dangqian411');
+				btns46.classList.remove('dangqian411');
+				btns42.classList.add("dangqian411");
+				
+				moves4.classList.remove("move413");
+				moves4.classList.remove("move414");
+				moves4.classList.remove("move415");
+				moves4.classList.remove("move416");
+				moves4.classList.add("move412");
+			}
+			
+			
+			btns43.onclick=function(){
+				btns42.classList.remove('dangqian411');
+				btns41.classList.remove('dangqian411');
+				btns44.classList.remove('dangqian411');
+				btns45.classList.remove('dangqian411');
+				btns46.classList.remove('dangqian411');
+				btns43.classList.add("dangqian411");
+				
+				moves4.classList.remove("move412");
+				moves4.classList.remove("move414");
+				moves4.classList.remove("move415");
+				moves4.classList.remove("move416");
+				moves4.classList.add("move413");
+			}
+			
+		
+			btns44.onclick=function(){
+				btns42.classList.remove('dangqian411');
+				btns43.classList.remove('dangqian411');
+				btns41.classList.remove('dangqian411');
+				btns45.classList.remove('dangqian411');
+				btns46.classList.remove('dangqian411');
+				btns44.classList.add("dangqian411");
+				
+				moves4.classList.remove("move412");
+				moves4.classList.remove("move413");
+				moves4.classList.remove("move415");
+				moves4.classList.remove("move416");
+				moves4.classList.add("move414");
+			}
+			
+		
+			btns45.onclick=function(){
+				btns42.classList.remove('dangqian411');
+				btns43.classList.remove('dangqian411');
+				btns44.classList.remove('dangqian411');
+				btns41.classList.remove('dangqian411');
+				btns46.classList.remove('dangqian411');
+				btns45.classList.add("dangqian411");
+				
+				moves4.classList.remove("move412");
+				moves4.classList.remove("move413");
+				moves4.classList.remove("move414");
+				moves4.classList.remove("move416");
+				moves4.classList.add("move415");
+			}
+			
+			btns46.onclick=function(){
+				btns42.classList.remove('dangqian411');
+				btns43.classList.remove('dangqian411');
+				btns44.classList.remove('dangqian411');
+				btns41.classList.remove('dangqian411');
+				btns45.classList.remove('dangqian411');
+				btns46.classList.add("dangqian411");
+				
+				moves4.classList.remove("move412");
+				moves4.classList.remove("move413");
+				moves4.classList.remove("move414");
+				moves4.classList.remove("move415");
+				moves4.classList.add("move416");
+			}
+			
+		</script>
 		
 		<div id="part412">
 			<div id="p412t">

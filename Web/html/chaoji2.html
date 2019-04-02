@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/chaoji.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="wp">
+		<div id="partc21">
+			<div class="ctitle">管理学院学生信息</div>
+			
+			<div class="chazhao">
+				<table>
+					<tr>
+						<td class="p412ts1">以班级查找：</td>
+						<td class="p412ts">
+							<div class="xuznzek412">
+								<select id="select412">
+									<option>管理学院</option>
+									<option>信管1701</option>
+									<option>信管1702</option>
+									<option>信管1703</option>
+								</select>
+							</div>
+						</td>
+						<td class="p412ts1">姓名查找：</td>
+						<td class="p412ts"><input type="text" class="xg412" placeholder="请输入姓名" /></td>
+						<td class="p412ts1">学号查找：</td>
+						<td class="p412ts"><input type="text" class="xg412" placeholder="请输入学号" /></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="buttons2">
+				<button class="cbs" id="cschazhao">查找</button>
+				<button class="cbs" id="csxiugai">修改</button>
+				<button class="cbs" id="cstianjia">添加</button>
+				<button class="cbs" id="csshanchu">删除</button>
+				<button class="cbss" id="cspiliang">批量导入</button>
+			</div>
+			
+			<table class="ct111">
+				<tr>
+					<th class="c11t2"><input name="all" type="checkbox" value="all" /></th>
+					<th class="c11t2">学号</th>
+					<th class="c11t2">班级</th>
+					<th class="c11t2">姓名</th>
+					<th class="c11t2">性别</th>
+					<th class="c11t2">电话</th>
+					<th class="c11t2">阶段</th>
+				</tr>
+				
+				<tr>
+					<td class="c11t2"><input name="1" type="checkbox" value="1" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t2">滕良文</td>
+					<td class="c11t2">男</td>
+					<td class="c11t2">13096162587</td>
+					<td class="c11t2">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="2" type="checkbox" value="2" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">敬晓慧</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="3" type="checkbox" value="3" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">韩芳</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="4" type="checkbox" value="4" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">袁霞</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="5" type="checkbox" value="5" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">张缔</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="6" type="checkbox" value="6" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">李俊睿</td>
+					<td class="c11t">男</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="7" type="checkbox" value="7" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">王聪</td>
+					<td class="c11t">男</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="8" type="checkbox" value="8" /></td>
+					<td class="c11t2">0121303490113</td>
+					<td class="c11t2">信管1301</td>
+					<td class="c11t">阿科达</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">正式党员</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask21">
+		<div class="cmaskbox">
+			<div class="cmtitle22">修改学生信息</div>
+			<form name="cadd">
+				<div class="cmb">
+					学号：<input class="cmt" type="text" name="sid" /> <br />
+					班级：<input class="cmt" type="text" name="sclass" /> <br />
+					姓名：<input class="cmt" type="text" name="sname" /> <br />
+					性别：<input class="cmt" type="text" name="ssex" /> <br />
+					电话：<input class="cmt" type="text" name="stel" /> <br />
+					阶段：<input class="cmt" type="text" name="sjieduan" /> <br />
+					密码：<input class="cmt" type="text" name="spwd" /> <br />
+					<input name="SUB" type="submit" class="cmbt"  value="提交" />
+					<input name="RSET" type="reset" class="cmbt" value="重置" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc21" value="取消" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask22">
+		<div class="cmaskbox">
+			<div class="cmtitle22">添加学生信息</div>
+			<form name="cadd">
+				<div class="cmb">
+					学号：<input class="cmt" type="text" name="sid" /> <br />
+					班级：<input class="cmt" type="text" name="sclass" /> <br />
+					姓名：<input class="cmt" type="text" name="sname" /> <br />
+					性别：<input class="cmt" type="text" name="ssex" /> <br />
+					电话：<input class="cmt" type="text" name="stel" /> <br />
+					阶段：<input class="cmt" type="text" name="sjieduan" /> <br />
+					密码：<input class="cmt" type="text" name="spwd" /> <br />
+					<input name="SUB" type="submit" class="cmbt"  value="提交" />
+					<input name="RSET" type="reset" class="cmbt" value="重置" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc22" value="取消" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask23">
+		<div class="cmaskbox2">
+			<div class="cmtitle2">提示</div>
+			<form name="cadd">
+				<div class="cmb2">
+					该条信息删除后不可恢复，<br />
+					确认删除？
+				</div>
+					<input name="RSET" type="button" class="cmbt" id="cmbtc321" value="确认" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc322" value="取消" />
+			</form>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask24">
+		<div class="cmaskbox3">
+			<div class="cmtitle23">批量导入学生信息</div>
+			<form name="cpladd">
+				<div class="cmb">
+					<a href="../else/example.xlsx"><div class="qingxz">请先下载模板文件</div></a>
+                    <div class="form-group">
+                         <label class="shangchuanwenjian" for="">上传文件：</label>
+                         <input class="liulan" type="file" placeholder="" name="file">
+					</div>
+				</div>
+					<input name="RSET" type="button" class="cmbt" id="cmbtc341" value="确认" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc342" value="取消" />
+			</form>
+		</div>
+	</div>
+	
+	<script>
+		$("#csxiugai").click(function(){
+			var xianshi = document.getElementById("cmask21");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc21").click(function(){
+			var xianshi = document.getElementById("cmask21");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		
+		$("#cstianjia").click(function(){
+			var xianshi = document.getElementById("cmask22");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc22").click(function(){
+			var xianshi = document.getElementById("cmask22");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		
+		$("#csshanchu").click(function(){
+			var xianshi = document.getElementById("cmask23");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc321").click(function(){
+			var xianshi = document.getElementById("cmask23");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		$("#cmbtc322").click(function(){
+			var xianshi = document.getElementById("cmask23");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		
+		$("#cspiliang").click(function(){
+			var xianshi = document.getElementById("cmask24");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc341").click(function(){
+			var xianshi = document.getElementById("cmask24");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		$("#cmbtc342").click(function(){
+			var xianshi = document.getElementById("cmask24");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/chaoji.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+	<div id="wp">
+		<div id="partc11">
+			<div class="ctitle">管理学院管理员信息</div>
+			<div class="buttons">
+				<button class="cbs" id="cupdate">修改</button>
+				<button class="cbs" id="cadd">添加</button>
+				<button class="cbs" id="cdelete">删除</button>
+			</div>
+			
+			<table class="ct111">
+				<tr>
+					<th class="c11t">选择</th>
+					<th class="c11t">账号</th>
+					<th class="c11t">分管年级</th>
+					<th class="c11t">姓名</th>
+					<th class="c11t">性别</th>
+					<th class="c11t">电话</th>
+					<th class="c11t">密码</th>
+				</tr>
+				
+				<tr>
+					<td class="c11t"><input name="1" type="checkbox" value="1" /></td>
+					<td class="c11t">2017001</td>
+					<td class="c11t">2017级</td>
+					<td class="c11t">滕良文</td>
+					<td class="c11t">男</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="2" type="checkbox" value="2" /></td>
+					<td class="c11t">2017002</td>
+					<td class="c11t">2017级</td>
+					<td class="c11t">敬晓慧</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="3" type="checkbox" value="3" /></td>
+					<td class="c11t">2018001</td>
+					<td class="c11t">2018级</td>
+					<td class="c11t">韩芳</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="4" type="checkbox" value="4" /></td>
+					<td class="c11t">2018002</td>
+					<td class="c11t">2018级</td>
+					<td class="c11t">袁霞</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="5" type="checkbox" value="5" /></td>
+					<td class="c11t">2016001</td>
+					<td class="c11t">2016级</td>
+					<td class="c11t">张缔</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="6" type="checkbox" value="6" /></td>
+					<td class="c11t">2016002</td>
+					<td class="c11t">2016级</td>
+					<td class="c11t">李俊睿</td>
+					<td class="c11t">男</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="7" type="checkbox" value="7" /></td>
+					<td class="c11t">2015001</td>
+					<td class="c11t">2015级</td>
+					<td class="c11t">王聪</td>
+					<td class="c11t">男</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+				<tr>
+					<td class="c11t"><input name="8" type="checkbox" value="8" /></td>
+					<td class="c11t">2015002</td>
+					<td class="c11t">2015级</td>
+					<td class="c11t">阿科达</td>
+					<td class="c11t">女</td>
+					<td class="c11t">13096162587</td>
+					<td class="c11t">789455</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask1">
+		<div class="cmaskbox">
+			<div class="cmtitle1">修改管理员信息</div>
+			<form name="cadd">
+				<div class="cmb">
+					账号：<input class="cmt" type="text" name="gid" /> <br />
+					年级：<input class="cmt" type="text" name="ggrade" /> <br />
+					姓名：<input class="cmt" type="text" name="gname" /> <br />
+					性别：<input class="cmt" type="text" name="gsex" /> <br />
+					电话：<input class="cmt" type="text" name="gtel" /> <br />
+					密码：<input class="cmt" type="text" name="gpwd" /> <br />
+					<input name="SUB" type="submit" class="cmbt" id="cmbta1" value="提交" />
+					<input name="RSET" type="reset" class="cmbt" value="重置" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc1" value="取消" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask2">
+		<div class="cmaskbox">
+			<div class="cmtitle1">添加管理员信息</div>
+			<form name="cadd">
+				<div class="cmb">
+					账号：<input class="cmt" type="text" name="gid" /> <br />
+					年级：<input class="cmt" type="text" name="ggrade" /> <br />
+					姓名：<input class="cmt" type="text" name="gname" /> <br />
+					性别：<input class="cmt" type="text" name="gsex" /> <br />
+					电话：<input class="cmt" type="text" name="gtel" /> <br />
+					密码：<input class="cmt" type="text" name="gpwd" /> <br />
+					<input name="SUB" type="submit" class="cmbt" id="cmbta2" value="提交" />
+					<input name="RSET" type="reset" class="cmbt" value="重置" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc2" value="取消" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="cmask" id="cmask3">
+		<div class="cmaskbox2">
+			<div class="cmtitle2">提示</div>
+			<form name="cadd">
+				<div class="cmb2">
+					该条信息删除后不可恢复，<br />
+					确认删除？
+				</div>
+					<input name="RSET" type="button" class="cmbt" id="cmbtc31" value="确认" />
+					<input name="fanhui" type="button" class="cmbt3" id="cmbtc3" value="取消" />
+			</form>
+		</div>
+	</div>
+	
+	<script>
+		$("#cupdate").click(function(){
+			var xianshi = document.getElementById("cmask1");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc1").click(function(){
+			var xianshi = document.getElementById("cmask1");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		
+		$("#cadd").click(function(){
+			var xianshi = document.getElementById("cmask2");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc2").click(function(){
+			var xianshi = document.getElementById("cmask2");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		
+		$("#cdelete").click(function(){
+			var xianshi = document.getElementById("cmask3");						
+			xianshi.classList.add("nowxcmxs");
+		});
+		$("#cmbtc31").click(function(){
+			var xianshi = document.getElementById("cmask3");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+		$("#cmbtc3").click(function(){
+			var xianshi = document.getElementById("cmask3");						
+			xianshi.classList.remove("nowxcmxs");
+		});
+	</script>
+	
+	
+</body>
+</html>

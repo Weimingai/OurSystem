@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="../css/guanliyuan301z.css" media="screen"  /> 
+<title>高校党员发展管理系统</title>
+<script src="../js/echarts.js"></script>
+</head>
+
+<body>
+	<div id="wp">
+		<div class="p332lspp">	
+				<div class="p332l1">
+				<div class="p332jd">团推优申请：</div>
+				起始时间：
+				<br />
+				<span class="p332et">2019.03.12 12:00:00</span>
+				<br />
+				截止时间：
+				<br />
+				<span class="p332et">2019.03.19 12:00:00</span>
+				</div>
+				<div class="p322l2spp">
+					<table>
+						<tr>
+							<td class="p332ts">提交申请人数:</td>
+							<td class="p332xx">102人</td>
+						</tr>
+						<tr>
+							<td class="p332ts">审批通过人数:</td>
+							<td class="p332xx">98人</td>
+						</tr>
+						<tr>
+							<td class="p332ts">通过率:</td>
+							<td class="p332xx">96.08%</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div id="p30133tu">
+				</div>
+		</div>
+		
+		<script type="text/javascript">
+				
+				// 基于准备好的dom，初始化echarts实例
+				var myChart30133= echarts.init(document.getElementById('p30133tu'));
+				// 指定图表的配置项和数据
+				
+				option30133 = {
+					    tooltip : {
+							trigger: 'item',
+							formatter: "{a} <br/>{b} : {c} ({d}%)"
+						},
+						color:['#5b9bd4','#ec7c30'],
+						legend: {
+							orient : 'vertical',
+							x : 'left',
+							data:['已通过','未通过']
+						},
+						toolbox: {
+							show : true,
+							feature : {
+								mark : {show: true},
+								
+								magicType : {
+									show: true, 
+									type: ['pie', 'funnel'],
+									option: {
+										funnel: {
+											x: '25%',
+											width: '50%',
+											funnelAlign: 'center',
+											max: 1548
+										}
+									}
+								}
+								
+							}
+						},
+						calculable : true,
+						series : [
+							{
+								name:'管理学院第三十四期入党积极分子培训班',
+								type:'pie',
+								radius : ['50%', '70%'],
+								itemStyle : {
+									normal : {
+										label : {
+											show : false
+										},
+										labelLine : {
+											show : false
+										}
+									},
+									emphasis : {
+										label : {
+											show : true,
+											position : 'center',
+											textStyle : {
+												fontSize : '20',
+												fontWeight : 'bold'
+											}
+										}
+									}
+								},
+								data:[
+									{value:98, name:'已通过'},
+									{value:32, name:'未通过'}
+									
+									
+								]
+							}
+						]
+					};
+				// 使用刚指定的配置项和数据显示图表。
+				myChart30133.setOption(option30133);
+			</script>
+			
+		<div id="part412s">
+			<div id="p412ts">
+				<button class="p412bto">已通过</button>
+				<button class="p412bto">未通过</button>
+				<button class="p412bto">导出</button>
+				<table>
+					<tr>
+						<td class="p412ts1">以班级查找：</td>
+						<td class="p412tsq">
+							<div class="xuznzek412">
+								<select id="select412s">
+									<option>管理学院</option>
+									<option>信管1701</option>
+									<option>信管1702</option>
+									<option>信管1703</option>
+								</select>
+							</div>
+						</td>
+						<td class="p412ts1">精确查找：</td>
+						<td class="p412tsq"><input type="text" class="xg412" placeholder="请输入姓名或学号" /></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="p412bs">
+				<table id="tp412s">
+					<tr>
+		
+						<th class="p412t1">序号</th>
+						<th class="p412t2">班级</th>
+						<th class="p412t3">学号</th>
+						<th class="p412t4">姓名</th>
+						<th class="p412t5">提交时间</th>
+						<th class="p412t6">审批时间</th>
+						<th class="p412t7">状态</th>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">1</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">2</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+					<tr>
+						
+						<td class="p412ts">3</td>
+						<td class="p412ts">信管1701</td>
+						<td class="p412ts">0121703490117</td>
+						<td class="p412ts">王鑫伟</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">2017.12.01 12:00:00</td>
+						<td class="p412ts">已通过</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div id="p411w">
+				<div class="diye">
+					<span class="dys">第  <input class="in" type="text" value="1" />  页</span>  
+					<span class="dys">共 3 页</span> 
+					<span class="dys">每页  
+					<select class="in2">
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>  条</span>
+					<span><button class="dyq">确定</button></span>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>
